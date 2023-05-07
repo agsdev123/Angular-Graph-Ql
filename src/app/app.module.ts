@@ -10,6 +10,8 @@ import { OverlayPanelModule } from 'primeng/overlaypanel';
 import {AvatarModule} from 'primeng/avatar';
 import {TabViewModule} from 'primeng/tabview';
 import {TableModule} from 'primeng/table';
+import {ButtonModule} from 'primeng/button';
+import { DialogModule } from "primeng/dialog";
 import {
   HttpBackend,
   HttpClient,
@@ -32,6 +34,8 @@ import { GraphQLModule } from './graphql.module';
     AppRoutingModule,
     PasswordModule,
     HttpClientModule,
+    ButtonModule,
+    DialogModule,
     FormsModule, ReactiveFormsModule,
     // HeaderComponent,
     OverlayPanelModule,

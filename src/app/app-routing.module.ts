@@ -8,11 +8,7 @@ import { LoginPageComponent } from "./core/authentication/login-page/login-page.
 const routes: Routes = [
   { path: "", redirectTo: "login", pathMatch: "full" },
   { path: "login", component: LoginPageComponent },
-  {
-    path: "",
-    loadChildren: () =>
-      import(`./modules/Sbom/Sbom.module`).then((m) => m.SbomModule),
-  },
+
   { path: "**", redirectTo: "login" },
 ];
 

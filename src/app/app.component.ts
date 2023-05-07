@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { GraphqlService } from './core/services/graphql.service';
 
+import { Validators, FormBuilder, FormGroup } from "@angular/forms";
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,8 +12,29 @@ import { GraphqlService } from './core/services/graphql.service';
 export class AppComponent {
   data: any[] | any;
   selectedData: any;
-
-  constructor(private graphqlService: GraphqlService) {}
+  userform: any;
+  addDomainModal:any=false
+  constructor(private graphqlService: GraphqlService,    private fb: FormBuilder) {
+     this.userform = this.fb.group({
+      name: [
+        "",
+        [
+          Validators.required,
+         
+        ],
+      ],
+      email: [ "",
+        [
+          Validators.required,
+         
+        ],],
+        username: [ "",
+        [
+          Validators.required,
+         
+        ],],
+    });
+  }
 
   ngOnInit() {
     this.graphqlService.getAllData().subscribe(result => {
@@ -24,7 +47,22 @@ export class AppComponent {
   onSelect(data: any) {
     this.selectedData = data;
   }
+  handleCloseAssociate() {
+    this.addDomainModal = false;
+  }
+  handleOpenAssociate() {
+    this.addDomainModal = true;
+  }
+ adduser() {
+  const { name, email,username } = this.userform.value;
+ 
+   this.graphqlService.createUser({ name, email,username }).subscribe(result => {
+      this.userform.reset();
+    this.addDomainModal = false;
+        this.data.push({result});
+    });
 
+}
   createData(name: string, email: string,username:string) {
     this.graphqlService.createUser({ name, email,username }).subscribe(result => {
       console.log("createUser",result)
@@ -44,5 +82,8 @@ export class AppComponent {
       const index = this.data.findIndex((data: { id: any; }) => data.id === result.data.deleteData.id);
       this.data.splice(index, 1);
     });
+  }
+    get m() {
+    return this.userform.controls;
   }
 }

@@ -1,4 +1,4 @@
-<h1>Data List</h1>
+<!-- <h1>Data List</h1>
 <ul>
   <li *ngFor="let data of data" (click)="onSelect(data)">
     {{ data?.name }}-{{ data?.email }}
@@ -32,4 +32,109 @@
 </form>
 
 <h2>Delete Data</h2>
-<button *ngIf="selectedData" (click)="deleteData(selectedData.id)">Delete</button>
+<button *ngIf="selectedData" (click)="deleteData(selectedData.id)">Delete</button> -->
+<div class="card">
+           <form [formGroup]="userform" autocomplete="off" class="AddDomain">
+    <div class="add_domain_block">
+      <div class="input_fields">
+        <h5> Name<span>*</span></h5>
+        <div class="p-inputgroup">
+          <!-- <span class="p-inputgroup-addon">www</span> -->
+          <input type="text" pInputText placeholder="Enter Name"  formControlName="name"/>
+        </div>
+       
+         
+      </div>
+
+           <span class="error" *ngIf="m.name.touched && m.name.invalid">
+            <span
+              *ngIf="
+                m.name.errors?.required ||
+                m.name.errors?.pattern ||
+                m.name.errors?.maxlength
+              "
+              class="p-error"
+              >Please Enter Name</span
+            >
+          </span>
+      <div class="input_fields">
+        <h5> Email</h5>
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon"><i class="pi pi-server"></i></span>
+          <input type="text" pInputText placeholder=" Enter Email"      formControlName="email" />
+        </div>
+        <div *ngIf="m.email.touched && m.email.invalid">
+            <span *ngIf="m.email.errors?.required" class="p-error"
+              >Please Enter email
+            </span>
+          </div>
+      </div>
+        <div class="input_fields">
+        <h5>User Name</h5>
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon"><i class="pi pi-server"></i></span>
+          <input type="text" pInputText placeholder=" Enter User Name"      formControlName="username" />
+        </div>
+        <div *ngIf="m.username.touched && m.username.invalid">
+            <span *ngIf="m.username.errors?.required" class="p-error"
+              >Please Enter username
+            </span>
+          </div>
+      </div>
+    </div>
+    <div class="footer_block">
+      <button pButton type="button" label=" Add"    [disabled]="userform.invalid"   
+              (click)="adduser()"></button>
+      <button pButton type="button" label="Cancel" class="cancel_btn"               (click)="handleCloseAssociate()"></button>
+    </div>
+    </form>
+ <button pButton type="button" label="Add" class="cancel_btn" (click)="handleOpenAssociate()"></button>
+ 
+    <p-table #dt [value]="data" [rows]="10" [paginator]="true" [globalFilterFields]="['name','country.name','representative.name','status']" responsiveLayout="scroll"
+ [rowHover]="true" dataKey="id"
+        currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [showCurrentPageReport]="true">
+       
+        <ng-template pTemplate="header">
+            <tr>
+           
+                <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon></th>
+                <th pSortableColumn="Email">Email<p-sortIcon field="Email"></p-sortIcon></th>
+
+                <th></th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+            <tr>
+               
+                <td>{{product.name}}</td>
+                 <td>{{product.email}}</td>
+                          <td>
+                    <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success mr-2" 
+
+                    ></button>
+                    <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning" 
+ 
+                    ></button>
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="summary">
+            <div class="flex align-items-center justify-content-between">
+                In total there are {{data ? data.length : 0 }} products.
+            </div>
+        </ng-template>
+    </p-table>
+</div>
+
+
+<div class="add_domain_modal">
+  <p-dialog
+    position="center"
+    header="Add Associated Domain"
+    [(visible)]="addDomainModal"
+    [draggable]="false"
+    [resizable]="false"
+    [modal]="true"
+  >
+  
+  </p-dialog>
