@@ -42,8 +42,43 @@ export class GraphqlService {
         }
       }
     `;
+        // Use the query method when you want to fetch data once and receive the result. 
+    // This is suitable for scenarios where the data is static or doesn't frequently change.
+    
+    // return this.apollo.query({ query }).pipe(map((result) => result.data));
+    // ------------------------
 
-    return this.apollo.query({ query }).pipe(map((result) => result.data));
+
+    // Use the watchQuery method when you want to establish a subscription to the server and 
+    // receive real-time updates as the data changes. This is suitable for scenarios
+    //  where you need real-time data synchronization, such as chat applications or collaborative editing.
+// return this.apollo.watchQuery({ query }).valueChanges.pipe(
+//     map((result) => result.data)
+//   );
+    
+// Use the lazyQuery method when you want to defer the execution of a query until
+//  it's explicitly triggered. This is useful when you want to fetch data on-demand,
+//  such as when a user clicks a button or performs a specific action.
+
+  // Lazy Query
+    const lazyQuery = gql`
+     query ($options: PageQueryOptions) {
+        users(options: $options) {
+          data {
+            id
+            name
+            email
+          }
+          meta {
+            totalCount
+          }
+        }
+      }
+    `;
+
+  return  this.apollo.query<any>({
+      query: lazyQuery,
+    }).pipe(map((result) => result.data));
   }
 
   createUser(input: CreateUserInput): Observable<any> {
