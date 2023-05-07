@@ -14,6 +14,7 @@ export class AppComponent {
   selectedData: any;
   userform: any;
   addDomainModal:any=false
+  userid: any;
   constructor(private graphqlService: GraphqlService,    private fb: FormBuilder) {
      this.userform = this.fb.group({
       name: [
@@ -63,6 +64,16 @@ export class AppComponent {
     });
 
 }
+ updateuser() {
+  const { name, email,username } = this.userform.value;
+ 
+   this.graphqlService.updateUser(this.userid,{ name, email,username }).subscribe(result => {
+      this.userform.reset();
+    this.addDomainModal = false;
+        this.data.push({result});
+    });
+
+}
   createData(name: string, email: string,username:string) {
     this.graphqlService.createUser({ name, email,username }).subscribe(result => {
       console.log("createUser",result)
@@ -77,12 +88,30 @@ export class AppComponent {
     });
   }
 
-  deleteData(id: number) {
-    this.graphqlService.deleteData(id).subscribe(result => {
-      const index = this.data.findIndex((data: { id: any; }) => data.id === result.data.deleteData.id);
-      this.data.splice(index, 1);
-    });
-  }
+handledeleteUser(id: number) {
+  this.graphqlService.deleteUser(id).subscribe(deleted => {
+    if (deleted) {
+      this.graphqlService.getAllData().subscribe(updatedResult => {
+        console.log("Updated data:", updatedResult);
+        this.data = updatedResult.users.data;
+      });
+    }
+  });
+}
+handleEditUser(id: number){
+this.graphqlService.getUserById(id).subscribe(result => {
+  console.log("user...",result)
+   const { name, email,username } = result;
+this.userform.patchValue({
+    name,
+    email,
+    username
+  });
+  this.userid=id
+  });
+  
+}
+
     get m() {
     return this.userform.controls;
   }
