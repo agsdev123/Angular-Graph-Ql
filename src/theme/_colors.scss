@@ -1,0 +1,227 @@
+// :root {
+//     --primaryColor: #F6BB7E;
+//     --SecondaryColor: #F5B082;
+//     --thirdOrange: #F8D477;
+//     --fourthOragne :#F39F86;
+
+//     --black: #000;
+//     --black-secondary: #6C6C6C;
+//      --black-third: #888888;
+//     --black-fouth: #8C9094;
+//     --black-fivth: #BFBFBF;
+//     --black-sixth: #2D2C30;
+//     --black-seventh: #5a5a5a70;
+//     --black-eight: #5a5a5ad5;
+//     --black-ninth: #464646;
+//     --black-tenth: #8c9094;
+//     --black-eleventh: #81837f;
+//     --black-twelth: #39383b;
+//     --black-thirteen: #46464650;
+//     --black-fourteen: #0f0e0e8f;
+//     --black-fifteen: #716d6da5;
+//     --black-sixteen: #454242;
+//     --black-seventeen: #222222;
+//     --black-eighteen: #6f6f6f80;
+//     --black-ninteen: #000000;
+//     --black-twenty: #46464630;
+//     --black-twentyOne: #46464690;
+//     --black-twentyTwo: #46464670;
+//     --black-twentyThree: #000000aa;
+//     --black-twentyFour: #cbcbcb29;
+//     --black-tewntyFive: #747474;
+//     --black-twentySix: #1618196f;
+//     --black-twentySeven: #00000076;
+//     --black-twentyEight:#143F5A;
+  
+//     --white: #fff;
+//     --grey-secondary: #dbdbdb;
+//     --grey-third: #d9d9d9;
+//     --grey-fouth: #c3c3c3;
+//     --grey-fivth: #dedede;
+//     --grey-sixth: #a8a8a8;
+//     --grey-seventh: #5b5b5b;
+//     --grey-eight: #707070bb;
+//     --grey-ninth: #f8f8f8;
+//     --grey-tenth: #6b6767;
+//     --grey-eleventh: #a3a3a3;
+//     --grey-twelth: #acacac;
+//     --grey-thirteen: #d8d8d8;
+//     --grey-fourteen: #d6cecea5;
+//     --grey-fifteen: #cac3c3ad;
+//     --blue-third: #5db9f1;
+//     --blue-fourth: #2d80b5;
+// // ---------------------------------------- culida
+
+
+   
+//   }
+  
+
+:root {
+
+  --high: #D75059;
+  --low: #3A955E;
+  --medium:#D8C050;
+  // --primaryColor: #f6bb7e;
+  // --SecondaryColor: #f5b082; //be aware with secondary color
+  // --thirdOrange: #f8d477;
+  // --fourthOragne: #f39f86;
+  // --black: #000;
+  // --white: #fff;
+  // --grey-secondary: #dbdbdb;
+  // --grey-third: #d9d9d9;
+  // --grey-fourth :#4b4128;
+// ......................................................................................................above uncommented things
+  // --grey-fouth: #c3c3c3;
+  // --grey-fivth: #dedede;
+  // --grey-sixth: #a8a8a8;
+  // --grey-seventh: #5b5b5b;
+  // --grey-eight: #707070bb;
+  // --grey-ninth: #f8f8f8;
+  // --grey-tenth: #6b6767;
+  // --grey-eleventh: #a3a3a3;
+  // --grey-twelth: #acacac;
+  // --grey-thirteen: #d8d8d8;
+  // --grey-fourteen: #d6cecea5;
+  // --grey-fifteen: #cac3c3ad;
+  // ........................this is me below comment.............
+  // --blue-third: #5db9f1;
+  // --blue-fourth: #2d80b5;
+  // ---------------------------------------- culida
+
+  --font-family-light: "rubiklight";
+  --font-family-regular: "rubikregular";
+  --font-family-medium: "rubikmedium";
+
+// 1)Orange:
+// *********
+--primaryColor:#f6bb7e;
+--secondaryColor:#f39f86;//--fourthOragne: #f39f86;
+
+--orangeOne:#e85700;
+--orangeTwo:#e07900;
+--orangeThree:#865527;
+// ...................................................
+// --orangeSix:#f5b281;
+// --orangeSeven:#f4af81;
+// --orangeEight:#f6bb7f;
+// --orangeNine:#f5b480;
+// --orangeTen:#f5ba7e;      //(--primaryColor)
+// --orangeEleven:#f6bc7e;
+// --orangeTwelve:#f4ad81;
+// --orangeThirteen:#f5b67f;
+// --orangeFourteen:#f4b081;
+// --orangeFifteen:#f4ad82;
+// --orangeSixteen:#f4af82;
+// --orangeSeventeen:#f5b181; 
+// .....................................................
+// ...........................................................
+// 2)yellow
+// *********
+--yellow:#f5c700;
+// --yellowTwo:#D8C050; //--medium
+--yellowThree:#f9d378;  
+--yellowFour:#d0d2aa;
+--yellowFive:#918708;
+--yellowSix:#917d51;
+--yellowSeven:#5e5130 ; 
+--yellowEight:#2B2617;
+
+
+// ................................
+// --yellowFour:#ffe284;//--yellowThree
+// --yellowFive:#f8d477;//--yellowThree
+// --yellowSix:#f9d278;//--yellowThree
+// --yellowTen:#967012;
+// --yellowThirteen:#4c4229;//--yellowSeven
+// --yellowFourteen:#483f27;//--yellowSeven
+// --yellowFifteen:#4b4128;//--yellowSeven
+
+// ............................................................
+// 3)Green:
+// ********
+// --green:#3a955e;//--low
+--greenTwo:#53C22B;
+// --greenTwo:#1ea966;
+// --greenThree:#03bd0b;
+// --greenFour:#0fb10f;
+// --greenFive:#59F796;
+// --greenSeven:#7BD66A;
+
+// ............................................................
+// 3)Red:
+--red:red;
+--redTwo:#a70000;
+// --redTwo:#ef0000;
+// --redThree:#FF0000;
+// --redFour:#860013;//reports color
+
+// ............................................................
+// 4)Pink:
+// --pink:#d75059;
+--pinkTwo:#fc669f;
+--rose:#e530bf;
+--pinkThree:#ff95ad;
+--pinkFour:#9c5e59;
+
+// ............................................................
+// 4)blue:
+--blue:#0065b7;//y
+--blueTwo:#5ec4fd;//y
+--blueThree:#6692d9;//y
+--blueFour:#303238;//y
+--blueFive:#605d6e;//y
+--violet:#865ec0;//y
+
+// ............................................................
+// 5)white:
+--white:#fff;
+// --whiteTwo:#ffffff;//--white
+// --whiteFour:#dfd6d6;//--white
+// --whiteFive:#f3f3f3;//--white
+// --whiteSeven:#f4f4e5;//--white
+// ............................................................
+// 6)black:
+--black:#000;
+// --blackTwo:#000000;//--black
+--blackTwo:#00000029;//y
+--blackThree:#1e1e1e;//y
+// --blackSix:#080808;//--black
+--blackFour:#2d2c30;//y
+--blackFive:#383838;//y
+
+// --blackSix:#2c2b2f;//--blackFour
+// --blackTen:#323232;//--blackFive
+// --blackEleven:#0c0b0f ;//--black
+// --blackTwelve:#212121;//--blackThree
+// --blackFourteen:#2d2c2c;//--blackFive
+--blackSix:#222327;//y
+--blackSeven:#121212;
+// --blackSeventeen:#222222;//--blackThree
+// --blackEighteen:#19191c;//--black
+// ............................................................
+// 6)Hash:
+--hash:#787878;
+// --hash:#706f76;//--hashFour(table sub data)
+// --hash:#5e5c62;//--hashFour
+--hashTwo:#6c6c6c;//y
+// --hash:#606060;//--hashTwo
+--hashThree:#494848;
+// --hash:#504f4f;//--hashThree
+--hashFour:#494a4f;//y
+
+// --hash:#3c3e44;//--hashFour           
+// --hash:#43464d;//--hashFour
+// --hash:#4e4d51;//--hashFour
+
+--hashFive:#8c9094;
+--hashSix:#909090;
+--hashSeven:#cdc5c5;
+// --hash:#7a7c79;//--hash
+// --hash:#888888;//--hashSix
+// --hash:#7c7e81;//--hashFive
+// --hashSeven:#5A5C63;//--hashFour
+// ............................................................
+}
+
+

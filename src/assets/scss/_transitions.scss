@@ -1,0 +1,28 @@
+
+// Header link transition
+.navbar__nav-main{
+    a{
+        &:hover{
+            color: var(--links-active);
+            background-color: var(--links-active-bg);
+        }
+    }
+}
+
+.navbar__nav-secondary{
+    a{
+        &:hover{
+            span{
+                color: var(--links-active);
+                border-bottom: 1px solid var(--links-active);
+            }
+        }
+    }
+}
+
+
+.ui-tabview .ui-tabview-nav li a{
+    &:hover{
+        color: var(--tabnav-active-text);
+    }
+}

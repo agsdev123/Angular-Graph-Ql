@@ -1,0 +1,305 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+// @import '../fonts/fonts';
+
+$black: #000;
+$white: #fff;
+$dark-primary: #D45D00;
+
+// Custom Variables
+:root {
+  // Color
+  --logo: #EF343B;
+
+  --body-bg: #222327;   
+  --header-secondary-bg: #151519;
+  --body-text: #fff;
+  --navbar-bg: #303238;
+  --changed-color: #53C22B;
+  --heading-text: #fff;
+  --alert-text: #D5D5D5;
+  --label-color: #d5d5d5;
+  --option-text: var(--label-color);
+  --icon-color: #666666;
+  --primary-color: #EF343B;
+  --panel-bg: #303238;
+  --panel-border: #383A40;
+  --high-threat-color: #F44436;
+  --medium-threat-color: #F67F16;
+  --low-threat-color: #FFCA28;
+  --links-primary: #FFFFFF;
+  --radio-border-active: #f0c300;
+  --links-active: #F0C301;
+  --links-secondary: #B8B8B8;
+  --table-sort-default: #838488;
+  --links-ternary: #D5D5D5;
+  --links-active-bg: #151519;
+  --circle-email: #484B53;
+  --circle-user: #FF7700;
+  --dropdown-link: #C7C7C7;
+  --dropdown-bg: rgba(29, 38, 45, 0.75); 
+  --dropdown-border: rgba(112, 112, 112, 0.25);
+  --select-arrow: #D5D5D5;
+  --select-arrow-lt: #FFFFFF;
+  --disable: #707070;
+  --card-option-icon: #d5d5d5; 
+  --alert-icon: #FF2929;
+  --page-content-title: #d5d5d5;
+  --tabnav-bg: #26282D;
+  --tabnav-active-bg: #5A5A5A;
+  --tabnav-active-text: #ffffff;
+  --tabnav-text: #7C7E81;
+  --tabnav-inside-tab-border:#7C7E81;
+  --tabnav-inside-tab-active:#F0C300;
+  --text-dull: #8D8D8D;
+  --text-light: #FFFFFF;
+  --online: #FFCA28;
+  --offline: #C7C7C7;
+  --primary-btn: #D45D00;
+  --primary-btn-tooltip: #873B00;
+  --primary-checkbox: #D45D00;
+  --default-checkbox: #475057;
+  --default-checkbox-text: #C1C1C1;
+  --default-checkbox-icon: #1E2224;
+  --btn-text: #ffffff;
+  --input-text-border: #5A5C63;
+  --input-placeholder: #BABABA;
+  --input-text: #ffffff;
+  --horizontal-bar-value: #ffffff;
+  --horizontal-bar-title: #C1C1C1;
+  --horizontal-bar-shadow: #26282D;
+  --horizontal-bar-active: #FF8F00;
+  --horizontal-bar-active-lt: #FFCA28;
+  --card-subheading : #C1C1C1;
+  --risk-meter-high:#ca333b;
+  --risk-meter-medium:#d45d00;
+  --risk-meter-low:#f0c300;
+  --risk-high: #F34335;
+  --risk-medium: #DC6A51;
+  --risk-low: #FFA447;
+  --risk-stats: #69789A;
+  --risk-stats-current: #ffffff;
+  --filter-dropdown: #303238;
+  --filter-dropdown-overlay: rgba(0, 0, 0, 0.85);
+  --filter-border: #3B4348;
+  --filter-nav-link: #BEBEBE;
+  --filter-nav-link-active: #FC6C35;
+  --accordion-active: #F0C300;
+  --accordion-icon: #303238;
+  --accordion-inactive: #c1c1c1;
+  --asset-card: #303238;
+  --asset-card-stats: #26282D;
+  --asset-card-icon: #ffffff;
+  --asset-card-logo: #D6D6D6;
+  --asset-label-title: #ffffff;
+  --tooltip-text: #ffffff;
+  --tooltip-border: #484E53;
+  --label-text: #C1C1C1;
+  --accordion-header: #43464D;
+  --accordion-header-text: #FFFFFF;
+  --accordion-body-text: #C1C1C1;
+  --device-chart-days-label: #9E9E9E;
+  --security-col-border: #383A40;
+  --table-offline:#9D4839;
+  --table-online:#36B189;
+  --header-icon: var(--card-option-icon);
+
+  --current-status: #53C22B;
+  --current-risk-low: #FFC629;
+  --circle-user-text: var(--body-text);
+  --text-danger: #070101;  
+  --switch-bg:#50535d;
+  --tooltip-bg : rgba(37,49,58,0.64);
+  --fulltable-btn-bg:  rgba(29, 38, 45, 0.75);
+  --scrollbar-bg: #494848;
+  --scrollbar-thumb: #909090;
+  --table-border: #3C3E44;
+  --table-hover-color: #3C3E44;
+  --custom-dropdown-bg: rgba(37, 49, 58, 0.71);
+  --datepicker-active-label: #ffffff;
+  --custom-radio-border:  #C7C7C7; 
+  --active-radio-border: #C7C7C7; 
+  --table-paginator-bg: var(--filter-border);
+  --paginator-select-bg: var(--asset-card);
+  --asset-detail-header-bg: #151519;
+  --asset-card-label: var(--option-text);
+  --switch-active-thumb: #FFCA28;
+  --switch-thumb: var(--scrollbar-thumb);
+  --btn-outline-border: #636363;
+  --coming-soon : var(--risk-low);
+  --sankey-box-bg: #f5f4f5;
+  --sankey-box-text: #494949;
+  --loader-screen-bg: rgba(0,0,0,0.6);
+  // --card-border: var(--panel-bg);
+    // Border Colors
+  --border-bottom-color:#3C3E44;
+  // Border radius
+  --panel-border-radius: 5px;
+
+  --error-message-bg:#FFCDD2;
+  --error-message-border: #e60017;
+  --error-message-color: #73000c;
+  --success-message-bg: #C8E6C9;
+  --success-message-border: #439446;
+  --success-message-color: #224a23;
+
+  // Transitions
+  --link-transition: all 0.2s ease-in;
+
+  // Typography
+  --font-family-light: 'rubiklight';
+  --font-family-regular: 'rubikregular';
+  --font-family-medium: 'rubikmedium';
+}
+
+.light-theme{
+  --body-bg: #F5F7F7;   
+  --header-secondary-bg: #ffffff;
+  --body-text: #0B0B0B;
+  --links-active: #FF6E00;  
+  --links-active-bg: #ffffff;
+  --navbar-bg: #E3E5E6;
+  --links-secondary: #707071;
+  --header-icon: #ff6e00;
+  --circle-email: #ffffff;
+  --circle-user: #ffffff;
+  --circle-user-text: var(--links-active);
+  --panel-bg: #ffffff;
+  --heading-text: var(--body-text);
+  --card-option-icon: #47484A; 
+  --panel-border: #DBE0E6;
+  --label-color: #8D8D8D;
+  --option-text: var(--label-color);
+  --page-content-title: #585858;
+  --tabnav-bg: #F0F0F1;
+  --tabnav-active-bg: #D6D6D6;
+  --tabnav-active-text: #0B0B0B;
+  --tabnav-text: #707071;
+  --fulltable-btn-bg: #F5F5F5;
+  --high-threat-color: #D61919;
+  --medium-threat-color: #FF6D00;
+  --low-threat-color: #FFB300;
+  --risk-high: var(--high-threat-color);
+  --risk-medium: var(--medium-threat-color);
+  --risk-low: var(--low-threat-color);
+  --risk-meter-high:var(--high-threat-color);
+  --risk-meter-medium:var(--medium-threat-color);
+  --risk-meter-low:var(--low-threat-color);
+  --risk-stats: #737477;
+  --risk-stats-current: #222431;
+  --horizontal-bar-value: #5F6063;
+  --horizontal-bar-title: #737477;
+  --horizontal-bar-shadow: #EAEAEA;
+  --horizontal-bar-active: #FF7F00;
+  --scrollbar-bg: #E8ECF2;
+  --input-text-border: #DDDDDE;
+  --input-placeholder: #8C8E94;
+  --input-text: #222431;
+  --dropdown-link: #5F6063;
+  --table-border: #E1E3E3;
+  --table-hover-color: #F5F7F7;
+  --custom-dropdown-bg: rgba(252,254,255,0.71);
+  --datepicker-active-label: #333333;
+  --custom-radio-border:  #5F6063;
+  --active-radio-border:  #FF7F00; 
+  --radio-border-active: #FF7F00;
+  --filter-dropdown: #ffffff;
+  --filter-border:#DBE0E6;
+  --default-checkbox-text: #333333;
+  --filter-nav-link: #8D8D8D;
+  --filter-dropdown-overlay: rgba(0, 0, 0, 0.4);
+  --default-checkbox-icon: #ffffff;
+  --table-paginator-bg: #F2F2F2;
+  --paginator-select-bg: #DDDDDE;
+  --btn-text: var(--body-text);  
+  --links-ternary: #5F6063;  
+  --asset-label-title: var(--body-text);
+  --asset-detail-header-bg: #E3E5E6;
+  // --card-border: #DBE0E6;
+  --asset-card: #ffffff;
+  --asset-card-logo: #ffffff;
+  --asset-card-icon: var(--body-text);
+  --asset-card-stats: #ECECEC;
+  --tooltip-text: var(--body-text);
+  --tooltip-border: var(--panel-border);
+  --asset-card-label: #333333;
+  --select-arrow: #47484A;
+  --tabnav-inside-tab-border:#E3E3E3;
+  --tabnav-inside-tab-active:#FF6E00;
+  --btn-outline-border: #FF6E00;
+  --switch-bg:#E3E5E6;
+  --accordion-header: #E3E5E6;
+  --accordion-header-text: #0B0B0B;
+  --accordion-body-text: #5F6063;
+  --label-text: #5F6063;
+  --online: #222431;
+  --offline: #8C8E94;
+  --device-chart-days-label: #5F6063;
+  --coming-soon: #FF6E00;
+  --sankey-box-bg: #DBE0E6;
+  --sankey-box-text: #707070;
+  --security-col-border: var(--panel-border);
+  --loader-screen-bg: rgba(0,0,0,0.2);
+  // Changed
+
+  --alert-text: #D5D5D5;
+  
+  
+  --icon-color: #666666;
+  --primary-color: #EF343B;
+  
+  
+ 
+  --links-primary: #FFFFFF;
+  
+  
+  --table-sort-default: #838488;
+  
+  
+  --dropdown-bg: rgba(29, 38, 45, 0.75); 
+  --dropdown-border: rgba(112, 112, 112, 0.25);
+  
+  --disable: #707070;
+  --alert-icon: #FF2929;
+  
+  
+ 
+  --text-dull: #8D8D8D;
+  --text-light: #FFFFFF;
+  --primary-btn: #D45D00;
+  --primary-btn-tooltip: #873B00;
+  --primary-checkbox: #D45D00;
+  --default-checkbox: #475057;
+  
+  
+  
+  
+  --horizontal-bar-active-lt: #FFCA28;
+  --card-subheading : #C1C1C1;
+
+  
+  
+  
+  --filter-nav-link-active: #FC6C35;
+  --accordion-active: #F0C300;
+  --accordion-icon: #303238;
+  --accordion-inactive: #c1c1c1;
+  
+  
+  
+  
+  
+  --table-offline:#9D4839;
+  --table-online:#36B189;
+
+  --current-status: #53C22B;
+  --current-risk-low: #FFC629;
+
+  --text-danger: #070101;  
+  // Border Colors
+  --border-bottom-color:#3C3E44;
+}

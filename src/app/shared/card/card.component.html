@@ -1,0 +1,188 @@
+<div class="card_data">
+  <div class="card__header">
+    <div class="card_ Info">
+      <div class="card__title_wrapper">
+        <!-- <div class="card__title" *ngIf="hasCardTitle == true">
+          <span class="tittle">{{cardTitle}}</span>
+        </div> -->
+        <div class="card__title" *ngIf="hasTitleDropdown == true">
+          <p-dropdown
+            [options]="cardTitleDropdownData"
+            [(ngModel)]="selectedCardTitle"
+            [placeholder]="cardTitleDropdownPlaceholder"
+            (onChange)="changeDropdown($event)"
+          ></p-dropdown>
+        </div>
+      </div>
+
+      <div
+        class="
+          card__options-list">
+        <div
+          class="card__option-listitem-btns d-flex align-items-center"
+          *ngIf="reopenBtn"
+        >
+          <button
+            (click)="reopenFn($event)"
+            class="btn btn-pills arrow-right"
+            [class.changed]="changeDetect"
+          >
+            Reopen
+          </button>
+        </div>
+        <div
+          class="card__option-listitem-btns d-flex align-items-center"
+          *ngIf="addNewBtn"
+        >
+          <button
+            (click)="addNewBtnFn($event)"
+            class="btn btn-pills">
+            Add New +
+          </button>
+        </div>
+        <div
+          class="card__option-list-item view-mode d-flex align-items-center"
+          *ngIf="viewEnabled != ''"
+        >
+          <button
+            (click)="viewChange(viewEnabled)"
+            class="btn-link btn-link-md link-ternary link-sm"
+            [class.changed]="changeDetect"
+          >
+            <span *ngIf="viewEnabled === 'grid'">
+              <i class="icon-list"></i> List View
+            </span>
+            <span *ngIf="viewEnabled === 'list'">
+              <i class="icon-grid"></i> Grid View
+            </span>
+          </button>
+        </div>
+
+        <div
+          class="card__option-list-item view-mode d-flex align-items-center"
+          *ngIf="viewListEnabled != ''"
+        >
+          <button
+            (click)="onlyListView(viewListEnabled)"
+            class="btn-link btn-link-md link-ternary link-sm"
+            [class.changed]="changeDetect">
+            <!-- <span *ngIf="viewEnabled === 'list'"> -->
+              <i class="icon-list"></i> List View
+            <!-- </span> -->
+          </button>
+        </div>
+
+        <div
+          class="
+            card__option-listitem card__option-listitem-editlink
+            d-flex
+            align-items-center
+          "
+          *ngIf="
+            hasEditTableLink == true ||
+            (viewEnabled !== '' && viewEnabled === 'list')
+          "
+        >
+          <button
+            class="btn-link btn-link-md link-ternary link-sm"
+            (click)="openEditTablePopup($event)"
+          >
+            Edit Table
+          </button>
+        </div>
+        <div
+          class="
+            card__option-listitem card__option-listitem-btns
+            custom-dropdown-wrapper
+            d-flex
+            align-items-center
+          "
+          *ngIf="filterOptions && !isFulltable"
+        >
+          <button class="btn-icon" (click)="toggleFilter()">
+            <span
+              class="icon icon-card-option icon-filter"
+             
+            ></span>
+          </button>
+        </div>
+
+        <div
+          class="
+            card__option-listitem card__option-listitem-btns
+            d-flex
+            align-items-center
+          "
+          *ngIf="tableView"
+        >
+          <button
+            (click)="tableViewFn($event)"
+            class="btn-link btn-link-md link-ternary link-sm p-2"
+            [class.changed]="changeDetect"
+          >
+            <span
+              *ngIf="siteView === 'chart'"
+              class="d-flex align-items-center"
+            >
+              <i class="icon-table text-14 pr-1"></i> Table View
+            </span>
+            <span
+              *ngIf="siteView === 'table'"
+              class="d-flex align-items-center"
+            >
+              <i class="icon-charts text-14 pr-1"></i> Chart View
+            </span>
+          </button>
+        </div>
+        <div
+          class="
+            card__option-listitem card__option-listitem-btns
+            d-flex
+            align-items-center
+          "
+        >
+          <div class="btn-icon-group d-flex p-justify-start align-center">
+            <div
+              class="btn-dropdown custom-dropdown-wrapper"
+              *ngIf="download">
+              <span class="icon icon-download export-data" (click)="exportFn()"></span>
+            </div>
+            <button class="btn-icon" *ngIf="resetBtn">
+              <span
+                class="icon icon-card-option icon-reset"
+                [class.changed]="changeDetect"
+                (click)="ResetCardFn()"
+              ></span>
+            </button>
+            <div
+              class="btn-dropdown custom-dropdown-wrapper"
+              [class.open]="show"
+              *ngIf="moreOptions"
+            >
+              <button class="btn-icon px-0" #dropdown (click)="toggle()">
+                <span class="icon icon-card-option icon-more-dots"></span>
+              </button>
+
+              <ul class="dropdown custom-dropdown" [class.open]="show">
+                <li *ngIf="showExport">
+                  <button (click)="exportFn()">
+                    <span>Export</span>
+                    <span class="icon icon-download"></span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card__body" [class.p-0]="bodyPadding === 'p-0'">
+    <!-- <h1>dfghjkl</h1> -->
+    <div class="card__title" *ngIf="hasCardTitle == true">
+      <span class="tittle">{{cardTitle}}</span>
+    </div>
+    <ng-content></ng-content>
+  </div>
+</div>
+  

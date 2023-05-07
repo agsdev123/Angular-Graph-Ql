@@ -1,0 +1,26 @@
+<div
+  echarts
+  *ngIf="!isLoading"
+  [initOpts]="initOpts"
+  [options]="options"
+  [merge]="updateOption"
+  [loadingOpts]="loadingOpts"
+  (chartInit)="onChartInit($event)"
+  (chartClick)="onChartClick($event)"
+  class="polar_charts"
+></div>
+<div
+  *ngIf="isLoading"
+  class="chart_loading"
+>
+  <p-progressSpinner
+    [style]="{ width: '50px', height: '50px' }"
+    strokeWidth="3"
+    fill="transparent"
+    animationDuration="1.5s"
+  ></p-progressSpinner>
+</div>
+<div class="chart_position" 
+  *ngIf="isLoading === false && chartLength == 0" style="color: #B8B8B8; position: relative; bottom: 63%;">
+  No data found
+</div>

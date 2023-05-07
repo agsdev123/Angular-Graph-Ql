@@ -1,0 +1,45 @@
+<div class="Header_container">
+  <div class="logo_block">
+    <!-- <img src="../../../assets/darkeye_Light_new.svg" class="logo_img" />
+    <div class="company_text">
+      <span class="dark_eye">Dark Eye</span><br /><span>ADMIN</span>
+    </div> -->
+  </div>
+  <div class="header_navigation_block">
+    <!-- <nav>
+      <ul>
+        <li><a routerLink="/admin/dashboard" routerLinkActive="active">Dashboard</a></li>
+        <li><a routerLink="/admin/customer" routerLinkActive="active">Customers</a></li>
+        <li><a routerLinkActive="active">Tickets</a></li>
+        <li><a routerLinkActive="active">Reports</a></li>
+      </ul>
+    </nav> -->
+  </div>
+  <div class="side_content">
+    <div class="notify">
+      <i class="pi pi-bell"></i>
+      <p-avatar label="AA" shape="circle" size="xlarge" (click)="op.toggle($event)"></p-avatar>
+    </div>
+  </div>
+</div>
+
+
+<p-overlayPanel #op [showCloseIcon]="false" [style]="{ width: '180px' }" my="right top" at="right bottom">
+  <div class="Dashboard_sidebar_popup">
+    <div class="popup_info">
+      <!-- <i class="pi pi-user"></i> -->
+      <h5 routerLink="user-info">firstName</h5>
+    </div>
+    <div class="popup_info">
+      <!-- <i class="pi pi-user"></i> -->
+      <h5 routerLink="user-info">Profile</h5>
+
+    </div>
+    <div class="popup_info1">
+      <i class="pi pi-clock"></i>
+      <h5 (click)="logout()">Logout</h5>
+    </div>
+
+  </div>
+
+</p-overlayPanel>

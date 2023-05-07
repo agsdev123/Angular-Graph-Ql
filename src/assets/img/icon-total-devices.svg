@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+  <g id="icon-total-devices" transform="translate(-471 -459)">
+    <circle id="Ellipse_270" data-name="Ellipse 270" cx="14.5" cy="14.5" r="14.5" transform="translate(471 459)" fill="#f0c300"/>
+    <g id="Group_2365" data-name="Group 2365" transform="translate(-653.197 -595.242)">
+      <path id="Path_1695" data-name="Path 1695" d="M1141.052,1066.738l4.552-1.821V1059l-4.552,1.365L1136.5,1059v5.917Z" transform="translate(-0.628 -0.135)" fill="none" stroke="#2e3036" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_1696" data-name="Path 1696" d="M1145.6,1058.866l-4.552-1.365-4.552,1.365" transform="translate(-0.628 0)" fill="none" stroke="#2e3036" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="Line_1267" data-name="Line 1267" y2="6.372" transform="translate(1140.424 1060.198)" fill="none" stroke="#2e3036" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_1697" data-name="Path 1697" d="M1147.141,1075.417l3.641-1.821v-4.1l-3.641,1.365-3.641-1.365v4.1Z" transform="translate(-1.255 -1.076)" fill="none" stroke="#2e3036" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_1698" data-name="Path 1698" d="M1150.783,1069.366l-3.641-1.366-3.641,1.366" transform="translate(-1.255 -0.942)" fill="none" stroke="#2e3036" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="Line_1268" data-name="Line 1268" y2="4.552" transform="translate(1145.886 1069.756)" fill="none" stroke="#2e3036" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_1699" data-name="Path 1699" d="M1134.962,1079.6l5.462-1.821V1070.5l-5.462,1.821-5.462-1.821v7.282Z" transform="translate(0 -1.166)" fill="none" stroke="#2e3036" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_1700" data-name="Path 1700" d="M1140.424,1070.321l-5.462-1.821-5.462,1.821" transform="translate(0 -0.986)" fill="none" stroke="#2e3036" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="Line_1269" data-name="Line 1269" y2="7.283" transform="translate(1134.962 1071.122)" fill="none" stroke="#2e3036" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

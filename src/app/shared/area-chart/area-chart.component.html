@@ -1,0 +1,14 @@
+<div
+  class="d-flex p-justify-between"
+  [ngStyle]="{ height: chartHeight + 10 + 'px' }"
+>
+  <div
+    echarts
+    [initOpts]="initOpts"
+    (chartInit)="onChartInit($event)"
+    [options]="options"
+    [merge]="updateOptions"
+    [loadingOpts]="loadingOpts"
+    class="area-chart"
+  ></div>
+</div>

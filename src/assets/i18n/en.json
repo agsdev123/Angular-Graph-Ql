@@ -1,0 +1,496 @@
+{
+  "name": {
+    "label": "vrm project translate",
+    "placeholder": "Enter Name"
+  },
+  "common": {
+    "SideBar": {
+      "switch": {
+        "myOrganiation": "My Organisation",
+        "vendorMode": "Vendor Mode"
+      }
+    }
+  },
+  "VrmModule": {
+    "Questionaries": {
+      "tabs": {
+        "ManageQ": "Manage Questionnaires",
+        "Templates": "Templates",
+        "SendQ": "Send Questionnaires"
+      },
+      "ManageQ": {
+        "SQ": "Sent Questionnaires",
+        "ScheduleQ": "Scheduled Questionnaires",
+        "Archive": "Archive",
+        "Delete": "Delete",
+        "NQ": "No sent questionnaires",
+        "noSq": "No Scheduled questionnaires",
+        "SAQ": "Send a Questionnaire",
+
+        "questionnairesinfoTable": {
+          "Teplate": "Template Name",
+          "sentTo": "Sent To",
+          "sentOn": "Sent on",
+          "DueDate": "Due Date",
+          "Status": "Status",
+          "Actions": "Actions",
+          "Save": "Save",
+          "Cancel": "Cancel"
+        }
+      },
+      "Templates": {
+        "title": "Questionnaire Templates",
+        "Filter": "Filter By",
+        "Sort": "Sort",
+        "table": {
+          "sno": "S.NO",
+          "template": "Template Name",
+          "date": "Date Modified",
+          "Status": "Status"
+        },
+        "activeRoleModelHeader": "Do you want Delete it permanently..?",
+        "button": {
+          "addNew": "ADD NEW",
+          "CreateTemplate": "Create New Questionnaire",
+          "SC": "Start from an existing Questionnaire",
+          "Upload": "Upload Excel Questionnaire",
+          "Update": "Update from an existing Questionnaire",
+          "Cancel": "Cancel"
+        }
+      },
+      "Archive": {
+        "title": " Archive List",
+        "table": {
+          "Questionnaire": "Questionnaire Name",
+          "SentTo": "Sent To",
+          "SentOn": "Sent on",
+          "Due": "Due Date",
+          "Status": "Status"
+        }
+      },
+      "Overview": {
+        "Pagetitle": "Overview",
+        "DETAILS": "DETAILS",
+        "version": "version",
+        "title": "title",
+        "vendorName": "vendorName",
+        "isActive": "isActive",
+        "isSuspended": "isSuspended",
+        "schedule": "schedule",
+        "createdAt": "createdAt",
+        "createdOn": "createdOn",
+        "PROGRESS": "PROGRESS",
+        "Sent": "Sent",
+        "Progress": "In Progress",
+        "Remediation": "In Remediation",
+        "Completed": "Completed",
+        "Ua": "Unanswered questions",
+        "UnansweredsubTitle": "The following questions have not yet been answered. It’s recommended that you provide an answer to all questions so that “XYX COMPANY” can best assess your security posture"
+      }
+    },
+    "DashbordPage": {
+      "pageTitle": "Alpha Health Care",
+      "subPageTitle": "(Alpha healthcare.com)",
+      "cards": {
+        "TV": "Total Vendors",
+        "CRR": "Critical Risk Rating",
+        "HRR": "High Risk Rating",
+        "RM": "Risk Meter",
+        "MRR": "Moderate Risk Rating",
+        "LRR": "Low Risk Rating"
+      },
+      "VRBC": "Vendor Risk By Category",
+      "HRV": "High Risk Vendors with low performance score",
+      "VBI": "Vendor by Industory",
+      "TRS": "Top Risk Areas",
+      "table": {
+        "title": "Top ordered items from my vendors"
+      }
+    },
+    "SideBar": {
+      "Dashboard": { "title": "Dashboard" },
+      "SelfAssessment": {
+        "title": "Self-Assessment"
+      },
+      "VendorAssessment": { "title": "org" },
+      "Questionaries": { "title": "Questionaries" },
+      "Customer": { "title": "Customer" },
+      "QuestionnaireMng": {
+        "title": "Create Questionnaire"
+      },
+      "Reports": { "title": "Reports" },
+      "UserManagement": {
+        "title": "User Management"
+      },
+      "Remandiation": { "title": "Remediation" },
+      "RiskProfile": { "title": "Risk Profile" },
+      "LogActivity": { "title": "Log Activity" },
+      "HelpSupport": { "title": "Help & Support" }
+    },
+    "UserManagement": {
+      "pageTitle": "Alpha Health Care",
+      "subPageTitle": "(Alpha healthcare.com)",
+      "UserManagementTable": {
+        "title": "User Management",
+        "Name": "Name",
+        "Role": "Role",
+        "Email": "Email",
+        "Contact": "Contact",
+        "Address": "Address",
+        "Actions": "Actions"
+      },
+      "RolesTable": {
+        "Section": "Section",
+        "All": "All",
+        "Readonly": "Read -only",
+        "Write": "Write",
+        "Roles": "Roles"
+      },
+      "ActionButton": {
+        "createRole": "Create Role",
+        "AddUser": "Add User",
+        "Save": "Save",
+        "Cancel": "Cancel",
+        "Close": "Close"
+      },
+      "Model": {
+        "createNewRole": {
+          "title": "Create of new role",
+          "profile": "Role Name",
+          "profilePlaceHolder": "Enter Role Name"
+        }
+      },
+      "RoleCreation": {
+        "Section": "Section",
+        "All": "All",
+        "Read -only": "Read -only",
+        "Write": "Write",
+        "title": "Role Creation",
+        "save": "save",
+        "close": "close"
+      },
+      "AddUser": {
+        "Model": {
+          "title": "Lets set up your User profile with some basic information",
+          "UserEmail": "User Email",
+          "UserName": "User Name",
+          "ContactNumber": "Contact Number",
+          "AlternativeNumber": "Alternative Number",
+          "Role": "Role",
+          "IdentityProof": "Identity Proof",
+          "Address": "Address",
+          "ZipCode": "Zip Code",
+          "Password": "Password",
+          "ConfirmPassword": "Confirm Password",
+          "addUserBtn": "Add User",
+          "PreviewTitle": "preview of the",
+          "previewSUbTitle": "Roles",
+          "Assign": "Assign",
+          "createdMessage": "successfully Created!",
+          "updateMessage": "successfully Updated!"
+        }
+      },
+      "deleteModel": {
+        "title": "Do you want to remove user from management?",
+        "remove": "Yes, Remove",
+        "cancel": "No, Cancel",
+        "Save": "Save",
+        "Close": "Close"
+      }
+    },
+    "LogActivity": {
+      "title": "Log Activity",
+      "table": {
+        "Name": "Name",
+        "Role": "Role",
+        "Email": "Email",
+        "Contact": "Contact",
+        "Logged": "Logged",
+        "Tasks": "Tasks"
+      },
+      "userPropfile": {
+        "Fullname": "Full name",
+        "Edit": "Edit",
+        "Gender": "Gender",
+        "Role": "Role",
+        "email": "Email address",
+        "no": "Phone number",
+        "empid": "Employee ID",
+        "photo": "Update photo",
+        "companyInfo": {
+          "cName": "Company name",
+          "email": "Company Email address",
+          "phone": "Company Phone number",
+          "address": "Company Address",
+          "Dname": "Domain name",
+          "companyJoined": "Company joined"
+        }
+      },
+      "loginHistory": {
+        "createTitle": "Created a user role user management",
+        "EmpId": "Changed the employee Id"
+      }
+    },
+    "Reports": {
+      "title": "Exported Files",
+      "table": {
+        "Vendor": "Vendor",
+        "Domain": "Domain",
+        "OA": "Overall security rating",
+        "RG": "Report generated"
+      },
+      "reportsInfo": {
+        "title": "Report Overview",
+        "Breaches": "Breaches",
+        "timeLine": "Timeline of Typo-squatting domains by registered dates",
+        "empLeak": "Employee Leaks : Critical information about the employee email, phone number, physical address, and other leaks",
+        "type": "Types of Employee leaks ( by Top 10 )",
+        "empMail": "Employee emails found in breaches",
+        "empLeakTrend": "Employee Leaks Trendline",
+        "sLeak": "GitHub Secrets Leaks",
+        "gRepo": "The organisation GitHub secrets in GitHub public repositories",
+        "gCount": "GitHub Leaks Count",
+        "gtrend": "GitHub Leaks Trendline",
+        "DS": "Domain Squatting",
+        "GL": " Timeline of Typo-squatting domains by registered dates",
+        "SSL": "SSL Certificate Validity",
+        "SSLV": "SSL certificates list with their validities",
+        "sslThread": "SSL Threats",
+        "sslVun": " SSL Vulnerabilities",
+        "totalSsl": "Total SSL Certificates",
+        "VC": "Valid Certificates",
+        "EX": "Expired Certificates",
+        "EXW": "Expiring in 2 weeks"
+      }
+    },
+    "SelfAssessment": {
+      "OverView": "Over View",
+      "CRR": "Cyber Risk Rating",
+      "ORM": "Overall Risk Rating",
+      "Threats": "Threats",
+      "viewAll": "View All",
+      "charts": {
+        "Cyber": "Cyber Risk Rating",
+        "Website": "Website Security",
+        "Network": "Network Security",
+        "Brand": "Brand & Reputation Risk",
+        "Email": "Email Security",
+        "Phishing": "Phishing & Malware"
+      },
+      "subCategroy": {
+        "Services": "Open Ports And Services",
+        "ServicesPort": "Ports And Services",
+        "Information": "Ports Information",
+        "Details": "Port Details"
+      },
+      "RiskAssignmentTable": {
+        "Domain": "Domain",
+        "Status": "Status",
+        "Description": "Description"
+      },
+      "riskProfileModalInfo": {
+        "Name": "Name",
+        "sent": "sent by",
+        "Close": "Close"
+      }
+    },
+    "VendorAssessment": {
+      "title": "Monitored Vendors",
+      "subTitle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis et quia nulla dolore molestiae doloremque, dolorem cupiditate. Itaque, ipsa quibusdam.",
+      "button": {
+        "Export": "Export",
+        "AddVendor": "Add New Vendor",
+        "Search": "Search",
+        "Next": "Next"
+      },
+      "vendorTable": {
+        "sno": "S.no",
+        "Vendor": "Vendor",
+        "Score": "Score",
+        "Status": "Status",
+        "Category": "Category",
+        "Tags": "Tags"
+      },
+      "addNewVendor": {
+        "title": "Lets Set Up Your Vendor Profile",
+        "name": "Business name",
+        "Website": "Business Website",
+        "Number": "Phone Number",
+        "House": "House#",
+        "City": "City",
+        "Country": "Country",
+        "State": "State",
+        "Zip": "Zip",
+        "Zip4": "Zip4"
+      },
+      "vendorCompany": {
+        "Table": {
+          "RelevanceScore": "Relevance Score",
+          "companyName": "company Name",
+          "EntityType": "Entity Type",
+          "RigisterdAgent": "Rigisterd Agent",
+          "fillingDate": "Filling Date",
+          "fillingStatus": "Filling Status",
+          "addressLocations": "Address Locations",
+          "action": "Actions"
+        }
+      },
+      "vendorCompanyProfile": {
+        "title": "Business Reputation Score",
+        "title_two": "Techmahindra.com",
+        "subTitle": "The business searches will display all the data scores, social and all other related information as per last selected date.",
+        "todo": "To-Do",
+        "kkk": "kkk",
+        "ddd": "ddd"
+      },
+      "vendorProfile": {
+        "title": "Culinda",
+        "Culinda": "(Culinda.com)",
+        "Profile": "Vendor Profile",
+        "Export": "Export",
+        "scan": "Re-scan",
+        "Name": "Name",
+        "Domain": "Primary Domain",
+        "Industry": "Industry",
+        "Rating": "Over all security Rating",
+        "Employees": "Employees",
+        "Quarters": "Head Quarters",
+        "Category": "Category",
+        "Info": "Contact Info",
+        "Overall": "Overall Risk Rating",
+        "Threats": "Threats",
+        "View": "View All",
+        "RISKRating": "Overall Risk Rating",
+        "NdataFound": "** No Data Found **",
+        "TR": "Total Records",
+        "Modal": "open Modal"
+      }
+    },
+    "HelpSupport": {},
+    "RiskProfile": {},
+    "Remandiation": {}
+  },
+  "VendorModules": {
+    "SideBar": {
+      "Dashboard": { "title": "Dashboard" },
+      "ClientList": { "title": "Client List" },
+      "Questionnaires": {
+        "title": "Questionnaires",
+        "route": "vendorquestions"
+      }
+    },
+    "DashbordPage": {
+      "pageTitle": "Alpha Health Care",
+      "subPageTitle": "(Alpha healthcare.com)",
+      "VendorsList": {
+        "TotalClients": "Total Clients",
+        "ActiveClients": "Active Clients",
+        "TotalQuestionnaires": "Total Questionnaires",
+        "CompletedQuestionnaires": "Completed Questionnaires",
+        "PendingQuestionnaires": "Pending Questionnaires"
+      },
+      "Vendorquestionnaries": {
+        "title": "Due date of questionnaries",
+        "table": {
+          "Questionnaires": "Name of Questionnaires",
+          "Client": "Client",
+          "Status": "Status",
+          "Category": "Category",
+          "In": "Due In",
+          "Date": "Due Date"
+        }
+      }
+    },
+    "clientList": {
+      "table": {
+        "no": "S.no",
+        "name": "Client name",
+        "client": "Questionnaires Received form client",
+        "completed": "Questionnaires completed",
+        "pending": "Questionnaires pending"
+      },
+      "ClquestionariesComponent": {
+        "title": "Culinda (Culinda.Com)",
+        "Archive": "Archive",
+        "Delete": "Delete",
+        "tabs": {
+          "Received": "Received QuestionnairFes",
+          "Progress": "In Progress Questionnaires",
+          "Answered": "Answered Questionnaires"
+        }
+      },
+      "vendorManageQuestionaires": {
+        "Template": "Template Name",
+        "By": "Sent By",
+        "on": "Sent on",
+        "Date": "Due Date",
+        "Actions": "Actions",
+        "Overview": "Overview",
+        "Archive": "Do you want Archive ..?",
+        "Cancel": "Cancel",
+        "Answer": "Answer Questionnaries"
+      },
+      "InprogressQuestionnaires": {
+        "Name": "Questionnaire Name",
+        "By": "Sent By",
+        "on": "Sent on",
+        "Date": "Due Date",
+        "Progress": "Progress",
+        "Overview": "Overview"
+      },
+      "AnsweredQuestionnaires": {
+        "Name": "Questionnaire Name",
+        "by": "Sent by",
+        "on": "Sent on",
+        "Date": "Due Date",
+        "Actions": "Actions",
+        "Remidiation": "Remidiation",
+        "Overview": "Overview",
+        "sent": "Sent Questionnaires"
+      }
+    },
+    "Questionnaires": {
+      "title": "Questionnaires",
+      "Received": "Received Questionnaires",
+      "Progress": "In Progress Questionnaires",
+      "Answered": "Answered Questionnaires",
+      "Archive": "Archive",
+      "Delete": "Delete"
+    },
+    "questionaryPreview": {
+      "title": "Vrm Questionnaire’s Preview",
+      "Save": "Save",
+      "Required": "Required",
+      "Identity": "Identity proof",
+      "Date": "Choose Due Date"
+    },
+    "questionaryOverview": {
+      "Pagetitle": "Overview",
+      "DETAILS": "DETAILS",
+      "version": "version",
+      "title": "title",
+      "vendorName": "vendorName",
+      "isActive": "isActive",
+      "isSuspended": "isSuspended",
+      "schedule": "schedule",
+      "createdAt": "createdAt",
+      "createdOn": "createdOn",
+      "PROGRESS": "PROGRESS",
+      "Sent": "Sent",
+      "Progress": "In Progress",
+      "Remediation": "In Remediation",
+      "Completed": "Completed",
+      "Unanswered": "Unanswered questions",
+      "unanswededAnswer": "The following questions have not yet been answered. It’s recommended that you provide an answer to all questions so that “XYX COMPANY” can best assess your security posture",
+      "complete": "complete"
+    },
+    "questionaryArchive": {
+      "pageTite": "Archive List",
+      "Questionnaire": "Questionnaire Name",
+      "To": "Sent To",
+      "on": "Sent on",
+      "Date": "Due Date",
+      "Status": "Status"
+    }
+  }
+}

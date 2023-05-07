@@ -1,0 +1,487 @@
+// .role-edit-table {
+//   .ui-tabview-panel {
+//     padding-top: 18px;
+//   }
+
+//   .Permissions-tabs {
+//     .ui-tabview {
+//       .ui-tabview-nav {
+//         text-align: center;
+//         display: flex;
+//         justify-content: center;
+//         border-bottom: 1px solid var(--tabnav-inside-tab-border);
+
+//         li {
+//           background: transparent;
+//           padding: 0px 15px;
+
+//           a {
+//             padding: 8px 0px;
+//           }
+
+//           &.ui-state-active {
+//             &:after {
+//               content: "";
+//               background: transparent;
+//               border-radius: 0 !important;
+//               height: 2px;
+//               width: 32px;
+//               background:var(--tabnav-inside-tab-active);
+//               position: absolute;
+//               bottom: 0;
+//             }
+//             a {
+//               color: var(--tabnav-inside-tab-active);
+//             }
+//           }
+
+//           &:first-child {
+//             border-radius: 0;
+//           }
+
+//           &:last-child {
+//             border-radius: 0;
+//           }
+//         }
+//       }
+
+//       .tabs-content-titles {
+//         label {
+//           color: $white;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .device-accordion-wrap {
+//   .Permissions-tabs {
+//     .ui-tabview {
+//       .ui-tabview-nav {
+//         justify-content: flex-start;
+
+//         li:first-child {
+//           padding-left: 0px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .p-inputgroup {
+//   display: flex;
+
+//   .p-inputgroup-addon {
+//     padding: 0px 7px;
+//     display: flex;
+//     align-items: center;
+//     border: 1px solid var(--input-text-border);
+//     border-radius: 3px 0px 0px 3px;
+//     border-right: 0;
+//     font-size: 12px;
+//     color: var(--body-text);
+//   }
+
+//   .form-control {
+//     border-radius: 0px 3px 3px 0px !important;
+//   }
+// }
+
+// .form-group {
+//   margin-bottom: 20px;
+//   width: 100%;
+
+//   label {
+//     color: var(--filter-nav-link);
+//     margin-bottom: 9px;
+//   }
+
+//   .form-control,
+//   .ui-inputtext,
+//   .ui-chips,
+//   .ui-dropdown,
+//   .ui-multiselect,
+//   .ui-calendar .ui-inputtext {
+//     width: 100%;
+//     // height: 52px;
+//     background: transparent;
+//     border: 1px solid var(--input-text-border);
+//     font-size: 12px;
+//     color: var(--body-text);
+//     padding: 7px 5px 6px;
+//     border-radius: 12px;
+//   }
+
+//   .ui-dropdown {
+//     min-width: 100%;
+
+//     .ui-placeholder {
+//       color: var(--input-placeholder);
+//     }
+//   }
+
+//   .ui-calendar {
+//     display: inline;
+
+//     .ui-datepicker {
+//       min-width: auto;
+//       margin-top: -8px;
+//       left: auto !important;
+//       right: 0px;
+
+//     }
+
+//     .ui-calendar-button {
+//       background: transparent;
+//       border: none;
+//       color: $white;
+//       position: absolute;
+//       right: 0;
+//       top: 0;
+//     }
+//   }
+
+//   .ui-datepicker-calendar {
+//     tr {
+//       td {
+
+//         &.ui-datepicker-current-day,
+//         &.ui-datepicker-today {
+//           background-color: $dark-primary;
+//           border-radius: 50%;
+
+//           a {
+//             color: $white;
+//           }
+//         }
+
+//         &.ui-datepicker-today {
+//           background-color: var(--links-secondary);
+//         }
+
+//         a {
+//           background: none !important;
+//         }
+//       }
+//     }
+//   }
+
+//   .ui-datepicker-header {
+//     .ui-corner-all {
+//       background: none !important;
+//       color: $white;
+//     }
+//   }
+
+//   .ui-chips {
+//     padding: 2px 0px;
+//     height: auto;
+
+//     .ui-chips-token {
+//       padding: 2px 20px 2px 5px;
+//       border: 1px solid var(--input-text-border);
+//       border-radius: 3px;
+//       margin-right: 3px;
+
+//       .ui-chips-token-label {
+//         margin: 0;
+//         font-size: 10px;
+//         color: var(--input-placeholder);
+//       }
+
+//       .ui-chips-token-icon {
+//         right: 1em;
+//         font-size: 7px;
+//         color: var(--input-placeholder);
+//       }
+//     }
+
+//     .ui-inputtext {
+//       height: 100%;
+
+//       .ui-chips-input-token {
+//         input {
+//           color: #ffffff;
+//         }
+//       }
+//     }
+//   }
+
+//   .ui-dropdown-label-container {
+//     .ui-inputtext {
+//       padding: 0;
+//     }
+//   }
+
+//   .ui-dropdown-trigger {
+//     padding: 0 16px;
+//   }
+
+//   .ui-radiobutton {
+//     .ui-state-default {
+//       .ui-radiobutton-icon {
+//         border: 1px solid $white;
+//         border-radius: 50%;
+//       }
+
+//       &.ui-state-active {
+//         .ui-radiobutton-icon {
+//           border: none;
+
+//           &::before {
+//             content: "";
+//             width: 100%;
+//             height: 100%;
+//             background-color: transparent;
+//             border: 1px solid var(--radio-border-active);
+//             position: absolute;
+//             left: 0px;
+//             border-radius: 50%;
+//             z-index: 98;
+//           }
+
+//           &::after {
+//             content: "";
+//             width: 45%;
+//             height: 45%;
+//             background-color: var(--radio-border-active);
+//             position: absolute;
+//             z-index: 99;
+//             border-radius: 50%;
+//             right: 0;
+//             left: 0;
+//             top: 0;
+//             bottom: 0;
+//             margin: auto;
+//           }
+//         }
+//       }
+//     }
+
+//   }
+
+//   .ui-radiobutton-label {
+//     padding-right: 30px;
+//   }
+
+//   .ui-multiselect {
+//     height: 30px;
+
+//     .ui-multiselect-panel {
+//       // background-color: var(--asset-card-stats);
+
+//       .ui-widget-header {
+//         display: none;
+//       }
+
+//       .ui-dropdown-trigger {
+//         padding: 0 16px;
+//       }
+//     }
+
+//     .ui-multiselect-label {
+//       padding: 0;
+//       font-size: 12px;
+//     }
+
+//     .ui-corner-right {
+//       padding: 0px 16px;
+//     }
+//   }
+
+//   .multiselect-chip {
+//     padding: 0;
+//     margin: 0;
+//     margin-top: 3px;
+
+//     li {
+//       background-color: transparent;
+//       border-radius: 3px;
+//       border: 1px solid var(--tabnav-inside-tab-border);
+//       display: inline-flex;
+//       text-decoration: none;
+//       margin: 3px 2px;
+//       padding: 2px;
+//       font-size: 10px;
+//       align-items: center;
+
+//       span {
+//         padding-left: 5px;
+//       }
+//     }
+//   }
+// }
+
+// .ui-inputswitch {
+//   width: 31px;
+//   height: 12px;
+
+//   .ui-inputswitch-slider {
+//     background-color: var(--switch-bg);
+//     border-radius: 6px;
+
+//     &::before {
+//       background-color: var(--switch-thumb);
+//       width: 14px;
+//       height: 14px;
+//       left: 0;
+//       top: 0;
+//       bottom: 0;
+//       margin: auto;
+//     }
+//   }
+
+//   &.ui-inputswitch-checked {
+//     .ui-inputswitch-slider {
+//       // background-color: var(--switch-active-thumb);
+
+//       &::before {
+//         background-color: var(--switch-active-thumb);
+//       }
+//     }
+//   }
+// }
+
+// /**ui-selectbutton**/
+// .form-group .ui-selectbutton {
+//   justify-content: start;
+// }
+
+// /** CheckBox **/
+// .ui-chkbox {
+//   margin-right: 12px;
+//   margin-bottom: 12px;
+
+//   .ui-chkbox-box {
+//     width: 13px;
+//     height: 13px;
+//     background-color: transparent;
+//     border: 1px solid var(--tabnav-inside-tab-border);
+//     // margin-top: 12px;
+//     position: relative;
+//     top: 6px;
+
+//     .ui-chkbox-icon {
+//       font-size: 8px;
+//       padding: 2px 0px;
+//     }
+//   }
+// }
+
+
+// .ui-fileupload {
+//   position: relative;
+
+//   .ui-fileupload-buttonbar {
+//     .ui-fileupload-choose {
+//       width: 100%;
+//       position: relative;
+
+//       &.ui-button {
+//         border: none;
+//         border-radius: 0px;
+//       }
+
+//       input[type=file] {
+//         position: absolute;
+//         right: 0;
+//         opacity: 0;
+//         left: 0;
+//         width: 100%;
+//         z-index: 97;
+//         top: -2px;
+//         min-height: auto;
+//         font-size: small;
+//         text-align: unset;
+//       }
+
+//       .pi-plus {
+//         display: none;
+//       }
+
+//       .ui-button-text {
+//         text-align: left;
+//       }
+//     }
+
+//     .ui-button {
+//       margin: 0;
+//       border-radius: 3px;
+//       border: 1px solid var(--input-text-border);
+//       color: var(--label-text);
+//       padding: 2px 3px;
+//       background: transparent;
+
+//       .ui-button-text {
+//         padding: 3px 5px;
+//       }
+//     }
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+
+//     p-button {
+//       .pi-upload {
+//         display: none;
+//       }
+
+//       &:last-child {
+//         display: none;
+//       }
+//     }
+//   }
+
+//   .ui-fileupload-content {
+//     position: absolute;
+//     width: calc(100% - 72px);
+//     z-index: 99;
+//     top: 0;
+//     display: flex;
+//     background-color: var(--panel-bg);
+//     padding: 5px;
+
+//     .ui-fileupload-files {
+//       div {
+//         display: flex;
+
+//         span {
+//           display: none;
+
+//           &:first-child {
+//             display: block;
+//             margin: 0;
+//             border: 1px solid var(--input-text-border);
+//             border-radius: 3px;
+//             padding: 2px 5px;
+//             display: flex;
+//             color: var(--risk-low);
+//             align-items: center;
+//             margin-right: 12px;
+
+//             i {
+//               color: var(--body-text);
+//               padding-left: 8px;
+//               cursor: pointer;
+//             }
+//           }
+//         }
+//       }
+//     }
+
+//     .more {
+//       cursor: pointer;
+//       display: block;
+//       margin: 0;
+//       border: 1px solid var(--input-text-border);
+//       border-radius: 3px;
+//       padding: 2px 5px;
+//       display: flex;
+//       color: var(--risk-low);
+//       align-items: center;
+//       margin-right: 12px;
+//       background-color: var(--input-text-border);
+//       color: var(--ody-text);
+//     }
+//   }
+// }

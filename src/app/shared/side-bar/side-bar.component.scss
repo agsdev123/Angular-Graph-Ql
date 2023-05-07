@@ -1,0 +1,466 @@
+.side_bar {
+  height: 100vh;
+  background-color: var(--black);
+  position: relative;
+  .sideBar_image {
+    height: 6.5rem;
+    .sideBar_image_block {
+      display: flex;
+      align-items: center;
+      // justify-content: space-between;
+      // padding-right: 10%;
+      span {
+        color: #f6bb7e;
+        font-size: 1.62rem;
+        margin-bottom: 0;
+        padding-left: 5%;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .side_bar_switch, .side_bar_switch1 {
+    margin: 1rem 1.8rem 0 1rem;
+    .p-card {
+      border-radius: 8px;
+      background-color: unset;
+      .p-card-body {
+        padding: 0.5% 4%;
+        background-color: #2d2c30;
+        border-radius: 8px;
+      }
+      .p-card-content {
+        padding: 3% 0;
+      }
+      .card_data {
+        margin: 0rem;
+        .data1, .data_switch {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-right: 5%;
+          .pi {
+            color: #ffc632;
+            font-size: 1.4rem;
+          }
+          img{
+            width: 2rem;
+            height: 1.8rem;
+            margin-top: 0;
+            padding-top: 0;
+          }
+          span {
+            font-size: 1.37rem;
+            cursor: pointer;
+          }
+          .profile {
+            width: 8rem;
+            color: #f4f4e5;
+            margin-left: 1rem;
+          }
+          .p-inputswitch {
+            height: 1.8rem;
+            margin-top: 1rem;
+            .p-inputswitch-slider {
+              height: 1.5rem;
+              width: 3.5rem !important;
+              font-size: 1rem;
+              font-weight: 600;
+              border: 1px solid #00000029;
+              box-shadow: inset 0px 3px 6px #00000029;
+              transform: translateX(0rem);
+            }
+            .p-inputswitch-slider::before {
+              background: #6c6c6c 0% 0% no-repeat padding-box;
+            }
+          }
+          .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+            background-color: #5e5130;
+            background: #4c4229 0% 0% no-repeat padding-box;
+            box-shadow: inset 0px 3px 6px #00000029;
+          }
+          .p-inputswitch-checked .p-inputswitch-slider:before {
+            transform: translateX(1.65rem);
+            background: #f6bb7e 0% 0% no-repeat padding-box;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 87em) {
+      margin: 0 0.9rem 0 1rem;
+      .p-card {
+        border-radius: 8px;
+        .p-card-body {
+          padding: 0.5% 2%;
+        }
+        .card_data {
+          margin: 0rem;
+          .data1 {
+            padding-right: 3.5%;
+            .pi {
+              font-size: 1.3rem;
+            }
+            span {
+              font-size: 1.3rem;
+            }
+            .profile {
+              width: 8rem;
+              margin-left: 1rem;
+            }
+            .p-inputswitch {
+              .p-inputswitch-slider {
+                width: 3.1rem !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .side_bar_switch1{
+    margin: 1rem 0.5rem 0 0.5rem;
+    // padding: 2%;
+    .data_switch{
+      display: flex;
+      justify-content: space-between;
+      padding: 2%;
+      img{
+        width: 1.5rem !important;
+      }
+    }
+    .p-card .card_data .data_switch .p-inputswitch .p-inputswitch-slider{
+      width: 3rem !important;
+    }
+  }
+
+  .logo_img {
+    width: 7rem;
+    padding: 0;
+    padding-left: 0.9rem;
+    margin-top: 1.5rem;
+    height: 3.8rem;
+    object-fit: fill;
+  }
+
+  .sidebar_details, .sidebar_details1 {
+    background-color: var(--black);
+    padding-top: 18%;
+    .Dashboard_sidebar_login,
+    .Dashboard_sidebar_data {
+      width: 100%;
+      padding-left: 6%;
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 1.52rem;
+      align-items: center;
+      cursor: pointer;
+      outline: none;
+      &:focus-visible{
+        outline: none;
+      }
+      @media screen and (min-width:110em) {
+        margin-bottom: 2rem;
+      }
+      .pi {
+        color: #605d6e;
+        font-size: 1.4rem;
+      }
+      img {
+        width: 1.9rem;
+        height: 1.7rem;
+        opacity: 0.5;
+      }
+      h3 {
+        color: #f4f4e5;
+        font-size: 1.4rem;
+        margin-left: 1.4rem;
+        margin-top: 0.5rem;
+        font-weight: 400;
+        color: #605d6e;
+        cursor: pointer;
+      }
+      &:hover {
+        border: none;
+        border-right: 5px solid #fff;
+        border-bottom-right-radius: 6px;
+        border-top-right-radius: 6px;
+        .pi {
+          color: #fff;
+        }
+        img {
+          opacity: 1;
+        }
+        h3 {
+          color: #fff;
+          font-weight: 600;
+          opacity: 1;
+          border: none;
+        }
+      }
+    }
+
+    .active {
+      border: none;
+      border-right: 5px solid #fff;
+      border-bottom-right-radius: 6px;
+      border-top-right-radius: 6px;
+      .pi {
+        color: #fff;
+      }
+      img {
+        opacity: 1;
+      }
+      h3 {
+        color: #fff !important;
+        font-weight: 400;
+        opacity: 1;
+        border: none;
+        // color: #f6bb7e !important;
+      }
+    }
+    .Dashboard_sidebar_login {
+      justify-content: space-between;
+      width: 95%;
+      align-items: center;
+      position: absolute;
+      bottom: 1.9%;
+      h3 {
+        color: #fff;
+      }
+      .avatar {
+        display: flex;
+      }
+      .p-avatar {
+        height: 3rem;
+        width: 3rem;
+      }
+      .pi {
+        color: #fff;
+        cursor: pointer;
+      }
+      &:hover {
+        border: none !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:100em) {
+  .side_bar {
+    .sidebar_details, .sidebar_details1 {
+      .Dashboard_sidebar_data {
+        margin-bottom: 2.15rem;
+      }
+      .Dashboard_sidebar_login {
+        position: absolute;
+        bottom: 1.1%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 100em) {
+  .side_bar {
+    .sidebar_details, .sidebar_details1 {
+      .Dashboard_sidebar_data {
+        margin-bottom: 1.8rem;
+      }
+      .Dashboard_sidebar_login {
+        position: absolute;
+        bottom: 1%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 90em) {
+  .side_bar {
+    .sidebar_details, .sidebar_details1 {
+      .Dashboard_sidebar_data {
+        margin-bottom: 1.6rem;
+      }
+      .Dashboard_sidebar_login {
+        position: absolute;
+        bottom: 1.7%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 80em) {
+  .side_bar {
+    .sidebar_details {
+      .Dashboard_sidebar_data {
+        margin-bottom: 0.75rem;
+        h3 {
+          font-size: 1.3rem;
+        }
+      }
+      .Dashboard_sidebar_login {
+        position: absolute;
+        bottom: 0.8%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 111em) and (min-width: 100em) and (max-height: 66em) and (min-height: 56.25em) {
+  .side_bar {
+    .sidebar_details {
+      padding-top: 16%;
+      padding-bottom: 2%;
+      .Dashboard_sidebar_data {
+        margin-bottom: 4rem;
+      }
+      .Dashboard_sidebar_login {
+        // padding-top: 10%;
+        position: absolute;
+        bottom: 1.8%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 87em) and (max-height: 768px) {
+  .side_bar {
+    .sidebar_details {
+      padding-top: 13%;
+      padding-bottom: 2%;
+      .Dashboard_sidebar_data {
+        margin-bottom: 1.8rem;
+      }
+      .Dashboard_sidebar_login {
+        // padding-top: 10%;
+        bottom: 1.3%;
+      }
+    }
+  }
+}
+
+// responsive Design
+@media screen and (max-width: 768px) {
+  .side_bar {
+    .side_bar_switch {
+      margin-top: 1rem !important;
+      .p-card {
+        .p-card-body {
+          padding: 0.5% 4%;
+          background-color: #2d2c30;
+          border-radius: 8px;
+        }
+        .p-card-content {
+          padding: 3% 0;
+        }
+        .card_data {
+          margin: 0rem;
+          .data1 {
+            padding-right: 4%;
+            .pi {
+              font-size: 1.3rem;
+            }
+            span {
+              font-size: 1.3rem;
+            }
+            .profile {
+              width: 100%;
+              margin-left: 0.4% !important;
+            }
+            .p-inputswitch {
+              .p-inputswitch-slider {
+                width: 2.5rem !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sidebar_details {
+      background-color: var(--black);
+      padding-top: 25%;
+      .Dashboard_sidebar_login,
+      .Dashboard_sidebar_data {
+        padding-left: 4%;
+        margin-bottom: 2rem;
+        cursor: pointer;
+        .pi {
+          font-size: 1.3rem;
+        }
+        img {
+          width: 1.4rem;
+          height: 1.5rem;
+        }
+        h3 {
+          font-size: 1.38rem;
+          margin-left: 6%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .side_bar {
+
+    .side_bar_switch
+    {
+      .p-card
+      {
+        .card_data
+        {
+          display: flex;
+          flex-direction: column-reverse;
+          overflow: hidden;
+          text-align: center;
+          .data1
+          {
+            .profile
+            {
+              font-size: 1rem;
+            }
+            display: unset;
+            .pi
+            {
+              display: block;
+              font-size: 1rem;
+              margin-left: 3%;
+            }
+          }
+        }
+
+      }
+    }
+    .sideBar_image {
+      .sideBar_image_block {
+        display: unset;
+        span {
+          margin-top: 2rem;
+          font-size: 1.1rem;
+          padding-left: 11%;
+        }
+      }
+    }
+    .logo_img {
+      width: 4rem;
+      margin-top: 0.4rem;
+    }
+    .sidebar_details {
+      .Dashboard_sidebar_data {
+        padding-left: 14%;
+        margin-bottom: 2rem;
+        .pi {
+          font-size: 1.3rem;
+        }
+        img {
+          width: 1.4rem;
+          height: 1.5rem;
+        }
+        h3 {
+          font-size: 1rem;
+          margin-left: 7%;
+          word-break: break-word;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,553 @@
+{
+    "asset_inventory_code": [
+        {
+            "config_name": "Open Ports & Services",
+            "check_code": 71,
+            "warning_code": 3006,
+            "test_name": "Open Ports & Services"
+        }
+    ],
+
+    "real_time_blackhole_check": [
+        {
+            "config_name": "Real Time Blackhole Check",
+            "check_code": 32,
+            "warning_code": 5001,
+            "test_name": "Mail servers checked in 10 blacklists"
+        }
+    ],
+
+    "mx_config_check": [
+        {
+            "config_name": "MX Config Check",
+            "check_code": 80,
+            "warning_code": 5006,
+            "test_name": "A records configured"
+        },
+        {
+            "config_name": "MX Config Check",
+            "check_code": 80,
+            "warning_code": 5007,
+            "test_name": "AAAA records configured"
+        },
+        {
+            "config_name": "MX Config Check",
+            "check_code": 80,
+            "warning_code": 5008,
+            "test_name": "Mail servers are not present in CNAME records"
+        },
+        {
+            "config_name": "MX Config Check",
+            "check_code": 80,
+            "warning_code": 5009,
+            "test_name": "Exchange fields contain valid domain names"
+        },
+        {
+            "config_name": "MX Config Check",
+            "check_code": 80,
+            "warning_code": 5010,
+            "test_name": "IPs are public"
+        },
+        {
+            "config_name": "MX Config Check",
+            "check_code": 80,
+            "warning_code": 5011,
+            "test_name": "Exchange fields don't contain IPs"
+        },
+        {
+            "config_name": "MX Config Check",
+            "check_code": 80,
+            "warning_code": 5012,
+            "test_name": "Name servers return identical MX records"
+        },
+        {
+            "config_name": "MX Config Check",
+            "check_code": 80,
+            "warning_code": 5013,
+            "test_name": "No duplicate MX records"
+        },
+        {
+            "config_name": "MX Config Check",
+            "check_code": 80,
+            "warning_code": 5015,
+            "test_name": "SPF"
+        },
+        {
+            "config_name": "MX Config Check",
+            "check_code": 80,
+            "warning_code": 5016,
+            "test_name": "DMARC"
+        },
+        {
+            "config_name": "MX Config Check",
+            "check_code": 80,
+            "warning_code": 5017,
+            "test_name": "Identical SPF and DMARC records"
+        }
+    ],
+
+    "ns_config_check": [
+        {
+            "config_name": "NS Config Check",
+            "check_code": 74,
+            "warning_code": 1003,
+            "test_name": "Allow recursive queries"
+        },
+        {
+            "config_name": "NS Config Check",
+            "check_code": 74,
+            "warning_code": 1004,
+            "test_name": "LAME name servers"
+        },
+        {
+            "config_name": "NS Config Check",
+            "check_code": 74,
+            "warning_code": 1005,
+            "test_name": "Stealth name servers"
+        },
+        {
+            "config_name": "NS Config Check",
+            "check_code": 74,
+            "warning_code": 1006,
+            "test_name": "Missing name servers"
+        },
+        {
+            "config_name": "NS Config Check",
+            "check_code": 74,
+            "warning_code": 1007,
+            "test_name": "Valid domain names"
+        },
+        {
+            "config_name": "NS Config Check",
+            "check_code": 74,
+            "warning_code": 1008,
+            "test_name": "No CNAME in NS records"
+        },
+        {
+            "config_name": "NS Config Check",
+            "check_code": 74,
+            "warning_code": 1009,
+            "test_name": "Glue check"
+        },
+        {
+            "config_name": "NS Config Check",
+            "check_code": 74,
+            "warning_code": 1010,
+            "test_name": "Identical NS records"
+        },
+        {
+            "config_name": "NS Config Check",
+            "check_code": 76,
+            "warning_code": 1012,
+            "test_name": "Name servers count"
+        },
+        {
+            "config_name": "NS Config Check",
+            "check_code": 76,
+            "warning_code": 1013,
+            "test_name": "NS Distributed over multiple ASNs"
+        },
+        {
+            "config_name": "NS Config Check",
+            "check_code": 76,
+            "warning_code": 1014,
+            "test_name": "NS Distributed over multiple networks"
+        },
+        {
+            "config_name": "NS Config Check",
+            "check_code": 76,
+            "warning_code": 1015,
+            "test_name": "NS Version are hidden"
+        }
+    ],
+
+    "soa_config_check": [
+        {
+            "config_name": "SOA Config Check",
+            "check_code": 84,
+            "warning_code": 1018,
+            "test_name": "SOA Serial number format"
+        },
+        {
+            "config_name": "SOA Config Check",
+            "check_code": 84,
+            "warning_code": 1019,
+            "test_name": "SOA Expire"
+        },
+        {
+            "config_name": "SOA Config Check",
+            "check_code": 84,
+            "warning_code": 1020,
+            "test_name": "SOA Min TTL"
+        },
+        {
+            "config_name": "SOA Config Check",
+            "check_code": 84,
+            "warning_code": 1022,
+            "test_name": "SOA Name servers agreement on serial number"
+        },
+        {
+            "config_name": "SOA Config Check",
+            "check_code": 84,
+            "warning_code": 1023,
+            "test_name": "SOA Refresh"
+        },
+        {
+            "config_name": "SOA Config Check",
+            "check_code": 84,
+            "warning_code": 1024,
+            "test_name": "SOA Retry"
+        },
+        {
+            "config_name": "SOA Config Check",
+            "check_code": 84,
+            "warning_code": 1025,
+            "test_name": "SOA RNAME"
+        }
+    ],
+
+    "name_server_respond": [
+        {
+            "config_name": "Name Server Respond",
+            "check_code": 75,
+            "warning_code": 1001,
+            "test_name": "All IPs are public"
+        },
+        {
+            "config_name": "Name Server Respond",
+            "check_code": 75,
+            "warning_code": 1002,
+            "test_name": "All names servers responded"
+        },
+        {
+            "config_name": "Name Server Respond",
+            "check_code": 75,
+            "warning_code": 1011,
+            "test_name": "TCP connections allowed"
+        },
+        {
+            "config_name": "Name Server Respond",
+            "check_code": 75,
+            "warning_code": 1016,
+            "test_name": "Name servers have A record"
+        },
+        {
+            "config_name": "Name Server Respond",
+            "check_code": 75,
+            "warning_code": 1017,
+            "test_name": "Name servers have AAAA record"
+        }
+    ],
+
+    "mail_server_respond": [
+        {
+            "config_name": "Mail Server Respond",
+            "check_code": 81,
+            "warning_code": 5002,
+            "test_name": "Connections Check"
+        },
+        {
+            "config_name": "Mail Server Respond",
+            "check_code": 81,
+            "warning_code": 5003,
+            "test_name": "Mail greeting"
+        },
+        {
+            "config_name": "Mail Server Respond",
+            "check_code": 81,
+            "warning_code": 5004,
+            "test_name": "Accept Postmaster address"
+        },
+        {
+            "config_name": "Mail Server Respond",
+            "check_code": 81,
+            "warning_code": 5005,
+            "test_name": "Accept Abuse address"
+        }
+    ],
+
+    "mail_server_reverseip_match": [
+        {
+            "config_name": "Mail Server Reverse IP Address match",
+            "check_code": 26,
+            "warning_code": "",
+            "test_name": "Mail Server"
+        },
+        {
+            "config_name": "Mail Server Reverse IP Address match",
+            "check_code": 26,
+            "warning_code": "",
+            "test_name": "IP Resolution"
+        },
+        {
+            "config_name": "Mail Server Reverse IP Address match",
+            "check_code": 26,
+            "warning_code": "",
+            "test_name": "Reverse DNS domain"
+        },
+        {
+            "config_name": "Mail Server Reverse IP Address match",
+            "check_code": 26,
+            "warning_code": "",
+            "test_name": "Reverse IP resolution"
+        },
+        {
+            "config_name": "Mail Server Reverse IP Address match",
+            "check_code": 26,
+            "warning_code": 5000,
+            "test_name": "Do they match"
+        }
+    ],
+
+    "whois_dns_server_match": [
+        {
+            "config_name": "Whois & DNS Servers Match",
+            "check_code": 61,
+            "warning_code": "",
+            "test_name": "Name Servers from DNS"
+        },
+        {
+            "config_name": "Whois & DNS Servers Match",
+            "check_code": 61,
+            "warning_code": 2006,
+            "test_name": "Name Servers from WHOIS"
+        },
+        {
+            "config_name": "Whois & DNS Servers Match",
+            "check_code": 61,
+            "warning_code": 2007,
+            "test_name": "Whois & DNS Servers Match"
+        }
+    ],
+
+    "domain_check": [
+        {
+            "config_name": "Domain Check",
+            "check_code": 93,
+            "warning_code": 2001,
+            "test_name": "Recently registered"
+        },
+        {
+            "config_name": "Domain Check",
+            "check_code": 93,
+            "warning_code": 2002,
+            "test_name": "Expires soon"
+        },
+        {
+            "config_name": "Domain Check",
+            "check_code": 93,
+            "warning_code": 2003,
+            "test_name": "Expires soon"
+        },
+        {
+            "config_name": "Domain Check",
+            "check_code": 93,
+            "warning_code": 2005,
+            "test_name": "Free domain zone"
+        },
+        {
+            "config_name": "Domain Check",
+            "check_code": 93,
+            "warning_code": 2008,
+            "test_name": "Offshore country"
+        },
+        {
+            "config_name": "Domain Check",
+            "check_code": 93,
+            "warning_code": 2009,
+            "test_name": "Owner contact details hidden"
+        }
+    ],
+
+    "domain_status": [
+        {
+            "config_name": "Domain Status",
+            "check_code": 62,
+            "warning_code": "",
+            "test_name": "Status Name"
+        },
+        {
+            "config_name": "Domain Status",
+            "check_code": 62,
+            "warning_code": "",
+            "test_name": "What does it Mean"
+        },
+        {
+            "config_name": "Domain Status",
+            "check_code": 62,
+            "warning_code": 2004,
+            "test_name": "Any Issues"
+        }
+    ],
+
+    "web_analysis": [
+        {
+            "config_name": "Potentially dangerous content",
+            "check_code": 91,
+            "warning_code": 3003,
+            "test_name": "Links to .apk files"
+        },
+        {
+            "config_name": "Potentially dangerous content",
+            "check_code": 91,
+            "warning_code": 3004,
+            "test_name": "Links to .exe files"
+        },
+        {
+            "config_name": "Potentially dangerous content",
+            "check_code": 91,
+            "warning_code": 3002,
+            "test_name": "Iframes"
+        },
+        {
+            "config_name": "Potentially dangerous content",
+            "check_code": 91,
+            "warning_code": 3008,
+            "test_name": "Scripts opening new windows"
+        },
+        {
+            "config_name": "Potentially dangerous content",
+            "check_code": 91,
+            "warning_code": 3007,
+            "test_name": "Redirects"
+        },
+        {
+            "config_name": "Host Configuration Issues",
+            "check_code": 92,
+            "warning_code": 3005,
+            "test_name": "Opened .git directory in the document root"
+        },
+        {
+            "config_name": "Host Configuration Issues",
+            "check_code": 92,
+            "warning_code": 3001,
+            "test_name": "Directory listing is allowed"
+        }
+    ],
+
+    "ssl_vulnerabilities": [
+        {
+            "config_name": "SSL Vulnerabilities (SSL Confg Check)",
+            "check_code": 88,
+            "warning_code": 6008,
+            "test_name": "Self signed certificate"
+        },
+        {
+            "config_name": "SSL Vulnerabilities (SSL Confg Check)",
+            "check_code": 88,
+            "warning_code": "",
+            "test_name": "Supported protocols"
+        },
+        {
+            "config_name": "SSL Vulnerabilities (SSL Confg Check)",
+            "check_code": 88,
+            "warning_code": 6012,
+            "test_name": "Supported cipher suites"
+        },
+        {
+            "config_name": "SSL Vulnerabilities (SSL Confg Check)",
+            "check_code": 88,
+            "warning_code": 6013,
+            "test_name": "SSL Compression"
+        },
+        {
+            "config_name": "SSL Vulnerabilities (SSL Confg Check)",
+            "check_code": 88,
+            "warning_code": 6014,
+            "test_name": "HTTP Public Key Pinning Extension"
+        },
+        {
+            "config_name": "SSL Vulnerabilities (SSL Confg Check)",
+            "check_code": 88,
+            "warning_code": 6015,
+            "test_name": "Force HTTPS connections"
+        },
+        {
+            "config_name": "SSL Vulnerabilities (SSL Confg Check)",
+            "check_code": 88,
+            "warning_code": 6017,
+            "test_name": "Heartbleed vulnerability check"
+        },
+        {
+            "config_name": "SSL Vulnerabilities (SSL Confg Check)",
+            "check_code": 88,
+            "warning_code": 6018,
+            "test_name": "TLS_FALLBACK_SCSV supported"
+        },
+        {
+            "config_name": "SSL Vulnerabilities (SSL Confg Check)",
+            "check_code": 88,
+            "warning_code": 6019,
+            "test_name": "TLSA DNS record configuration"
+        },
+        {
+            "config_name": "SSL Vulnerabilities (SSL Confg Check)",
+            "check_code": 88,
+            "warning_code": 6020,
+            "test_name": "TLSA DNS record configuration"
+        },
+        {
+            "config_name": "SSL Vulnerabilities (SSL Confg Check)",
+            "check_code": 88,
+            "warning_code": 6022,
+            "test_name": "Debian blacklist check"
+        },
+        {
+            "config_name": "SSL Vulnerabilities (SSL Confg Check)",
+            "check_code": 88,
+            "warning_code": 6021,
+            "test_name": "OCSP stapling enabled"
+        },
+        {
+            "config_name": "SSL Vulnerabilities (SSL Confg Check)",
+            "check_code": 88,
+            "warning_code": 6001,
+            "test_name": "Valid from"
+        },
+        {
+            "config_name": "SSL Vulnerabilities (SSL Confg Check)",
+            "check_code": 88,
+            "warning_code": 6002,
+            "test_name": "Valid from"
+        }
+    ],
+
+    "ssl_certificate_validity": [
+        {
+            "config_name": "SSL Certificate Validity (SSL Config Check)",
+            "check_code": 87,
+            "warning_code": 6002,
+            "test_name": "valid To"
+        },
+        {
+            "config_name": "SSL Certificate Validity (SSL Config Check)",
+            "check_code": 87,
+            "warning_code": 6003,
+            "test_name": "valid To"
+        },
+        {
+            "config_name": "SSL Certificate Validity (SSL Config Check)",
+            "check_code": 87,
+            "warning_code": 6004,
+            "test_name": "valid To"
+        },
+        {
+            "config_name": "SSL Certificate Validity (SSL Config Check)",
+            "check_code": 87,
+            "warning_code": 6006,
+            "test_name": "OCSP Check"
+        },
+        {
+            "config_name": "SSL Certificate Validity (SSL Config Check)",
+            "check_code": 87,
+            "warning_code": 6007,
+            "test_name": "Hostname Validation"
+        },
+        {
+            "config_name": "SSL Certificate Validity (SSL Config Check)",
+            "check_code": 87,
+            "warning_code": 6005,
+            "test_name": "CRL check"
+        }
+    ]
+}

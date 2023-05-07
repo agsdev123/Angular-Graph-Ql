@@ -1,0 +1,89 @@
+// Toggles
+//
+// Used in conjunction with global variables to enable certain theme features.
+
+
+// Utilities
+// @import "mixins/breakpoints";
+// @import "mixins/grid-framework";
+// @import "mixins/grid";
+
+// BOX SHADOW
+@mixin box-shadow($shadow){
+    box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -o-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+}
+
+// BORDER RADIUS
+@mixin border-radius($radius){
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    -ms-border-radius: $radius;
+}
+
+// TRANSITION
+@mixin transition($effects){
+    transition: $effects;
+    -webkit-transition: $effects;
+    -moz-transition: $effects;
+    -o-transition: $effects;
+    -ms-transition: $effects;
+}
+
+// TRANSFORM
+@mixin transform($props){
+    transform: $props;
+    -webkit-transform: $props;
+    -moz-transform: $props;
+    -o-transform: $props;
+    -ms-transform: $props;
+}
+
+// ANIMATION
+@mixin animation($props){
+    animation: $props;
+    -webkit-animation: $props;
+    -moz-animation: $props;
+    -o-animation: $props;
+    -ms-animation: $props;
+}
+
+// ANIMATION-DELAY
+@mixin animation-delay($props){
+    animation-delay: $props;
+    -webkit-animation-delay: $props;
+    -moz-animation-delay: $props;
+    -o-animation-delay: $props;
+    -ms-animation-delay: $props;
+}
+
+// USER-SELECT
+@mixin user-select($props){
+    user-select: $props;
+    -webkit-user-select: $props;
+    -moz-user-select: $props;
+    -o-user-select: $props;
+    -ms-user-select: $props;
+}
+
+// FILTER
+@mixin filter($props) {
+    filter: $props;
+    -webkit-filter: $props;
+    -moz-filter: $props;
+    -o-filter: $props;
+    -ms-filter: $props;
+}
+
+// FILL-IMAGE
+@mixin object-fit($props) {
+    object-fit: $props;
+    -moz-object-fit: $props;
+    -o-object-fit: $props;
+    -ms-object-fit: $props;
+};

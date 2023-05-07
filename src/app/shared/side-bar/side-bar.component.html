@@ -1,0 +1,26 @@
+<div class="side_bar">
+  <div class="sideBar_image">
+    <div class="sideBar_image_block">
+      <img src="../../../assets/darkeye_Light_new.svg" class="logo_img" />
+      <span>{{"Dark Eye"}}</span>
+    </div>
+    <p-divider></p-divider>
+  </div>
+
+
+
+  <div class="sidebar_details1" >
+    <div
+
+      *ngFor="let obj of sideBarData"
+      [routerLink]="obj.routerLink"
+      [routerLinkActive]="obj.routerLinkActive"
+      class="Dashboard_sidebar_data"
+
+      tooltipPosition="top"
+    >
+      <img [src]="obj.image" alt="logo" />
+      <h3>{{ obj.title }}</h3>
+    </div>
+  </div>
+</div>

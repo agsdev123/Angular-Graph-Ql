@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15">
+  <g id="icon-quarantine" transform="translate(-1198 -1873)">
+    <path id="Path_1663" data-name="Path 1663" d="M8.5,1,3,3.727V7.818C3,11.6,5.347,15.141,8.5,16c3.153-.859,5.5-4.4,5.5-8.182V3.727Z" transform="translate(1195 1872)" fill="#f08b6c"/>
+    <path id="Icon_awesome-lock" data-name="Icon awesome-lock" d="M5.851,3.276H5.5V2.223a2.223,2.223,0,1,0-4.446,0V3.276H.7a.7.7,0,0,0-.7.7V6.787a.7.7,0,0,0,.7.7H5.851a.7.7,0,0,0,.7-.7V3.978A.7.7,0,0,0,5.851,3.276Zm-1.521,0H2.223V2.223a1.053,1.053,0,1,1,2.106,0Z" transform="translate(1200 1876.25)" fill="#2e2e2e"/>
+  </g>
+</svg>

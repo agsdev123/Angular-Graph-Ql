@@ -1,0 +1,329 @@
+{
+    "data": [
+        {
+            "siteId": "CHMC",
+            "Name": "Name",
+            "Location": "La Jolla",
+            "DepartmentName": "Department name",
+            "DepartmentId": "Department Id",
+            "SiteTag": "Site Tag"
+        },
+        {
+            "siteId": "SCPA",
+            "Name": "Name",
+            "Location": "La Jolla",
+            "DepartmentName": "Department name",
+            "DepartmentId": "Department Id",
+            "SiteTag": "Site Tag"
+        },
+        {
+            "siteId": "LBH",
+            "Name": "Name",
+            "Location": "La Jolla",
+            "DepartmentName": "Department name",
+            "DepartmentId": "Department Id",
+            "SiteTag": "Site Tag"
+        },{
+            "siteId": "DRTX",
+            "Name": "Name",
+            "Location": "La Jolla",
+            "DepartmentName": "Department name",
+            "DepartmentId": "Department Id",
+            "SiteTag": "Site Tag"
+        }
+    ],
+
+    "thirdpaties": [
+        {
+            "VendorID": "1E4BC1",
+            "VendorName": "Vendor Name",
+            "VendorContact": "Vendor Contact",
+            "Description": "Description Name"
+        },
+        {
+            "VendorID": "1E4BC2",
+            "VendorName": "Vendor Name",
+            "VendorContact": "Vendor Contact",
+            "Description": "Description Name"
+        },
+        {
+            "VendorID": "1E4BC3",
+            "VendorName": "Vendor Name",
+            "VendorContact": "Vendor Contact",
+            "Description": "Description Name"
+        },
+        {
+            "VendorID": "1E4BC4",
+            "VendorName": "Vendor Name",
+            "VendorContact": "Vendor Contact",
+            "Description": "Description Name"
+        },
+        {
+            "VendorID": "1E4BC",
+            "VendorName": "Vendor Name",
+            "VendorContact": "Vendor Contact",
+            "Description": "Description Name"
+        }
+    ],
+
+    "roleData": [
+        {
+            "Roles": "Global Admin",
+            "numberUsers": "2",
+            "Sites": "DRTX, DMC, SMOXO, Shmc",
+            "Permissions": "0 Permissions"
+        },
+        {
+            "Roles": "Facility Admin",
+            "numberUsers": "4",
+            "Sites": "DRTX, DMC, SMOXO, Shmc",
+            "Permissions": "1 Permissions"
+        },
+        {
+            "Roles": "Bio Med Admin",
+            "numberUsers": "5",
+            "Sites": "DRTX, DMC, SMOXO, Shmc",
+            "Permissions": "2 Permissions"
+        },
+        {
+            "Roles": "Management",
+            "numberUsers": "2",
+            "Sites": "DRTX, DMC, SMOXO, Shmc",
+            "Permissions": "3 Permissions"
+        }
+    ],
+
+    "userData":[
+        {   
+            "id":1,
+            "UserName": "User Name 1",
+            "Role": "Global Admin",
+            "Permissions": "0 Permissions",
+            "Email": "pulsedemo@culinda.cpm",
+            "Phone":"(123) 456-7890",
+            "status": "Online"
+        },
+        {   
+            "id":2,
+            "UserName": "User Name 2",
+            "Role": "Global Admin",
+            "Permissions": "0 Permissions",
+            "Email": "pulsedemo@culinda.cpm",
+            "Phone":"(123) 456-7890",
+            "status": "Offline"
+        },
+        {
+            "id":3,
+            "UserName": "User Name 3",
+            "Role": "Global Admin",
+            "Permissions": "0 Permissions",
+            "Email": "pulsedemo@culinda.cpm",
+            "Phone":"(123) 456-7890",
+            "status": "Offline"
+        },
+        {
+            "id":4,
+            "UserName": "User Name 4",
+            "Role": "Global Admin",
+            "Permissions": "0 Permissions",
+            "Email": "pulsedemo@culinda.cpm",
+            "Phone":"(123) 456-7890",
+            "status": "Online"
+        }
+    ],
+
+    "SensorData":[
+        {   
+            "id":1,
+            "SensorID": "dmc_culindacs01p-enp1s0f1",
+            "Site":"dmc",
+            "VendorContact":"Vendor Contact"
+        },
+        {   
+            "id":2,
+            "SensorID": "dmc_culindacs01p-ens15f1",
+            "Site":"dmc",
+            "VendorContact":"Vendor Contact"
+        },
+        {   
+            "id":3,
+            "SensorID": "smrmc_culindacs01p-enp1s0f1",
+            "Site":"smrmc",
+            "VendorContact":"Vendor Contact"
+        },
+        {   
+            "id":4,
+            "SensorID": "sjomo_culindacs01p-enp1s0f1",
+            "Site":"sjomo",
+            "VendorContact":"Vendor Contact"
+        },
+        {   
+            "id":5,
+            "SensorID": "drtx_culindacs01p-ens2f0",
+            "Site":"drtx",
+            "VendorContact":"Vendor Contact"
+        }
+        
+    ],
+
+    "AddAssets":[
+        {   
+            "id":1,
+            "name":"status1",
+            "key":"status1",
+            "partNo":"CHMC901",
+            "partName":"imaging radiology",
+            "Quantity":"25071",
+            "part":"part manufacture1"
+        },
+        {   
+            "id":2,
+            "name":"status2",
+            "key":"status2",
+            "partNo":"CHMC902",
+            "partName":"imaging radiology",
+            "Quantity":"25076",
+            "part":"part manufacture1"
+        },
+        {   
+            "id":3,
+            "name":"status3",
+            "key":"status3",
+            "partNo":"CHMC903",
+            "partName":"imaging radiology",
+            "Quantity":"25074",
+            "part":"part manufacture1"
+        },
+        {   
+            "id":4,
+            "name":"status4",
+            "key":"status4",
+            "partNo":"CHMC904",
+            "partName":"imaging radiology",
+            "Quantity":"25079",
+            "part":"part manufacture1"
+        }        
+    ],
+
+    "MainAssets":[
+        {   
+            "id":1,
+            "Duration":"CHMC901",
+            "Frequency":"imaging radiology",
+            "Schedule":"Schedule 1",
+            "Approval":"25702",
+            "ApprovarName":"Approver Name 1",
+            "Status":"Approved"
+        },
+        {   
+            "id":2,
+            "Duration":"CHMC901",
+            "Frequency":"imaging radiology",
+            "Schedule":"Schedule 1",
+            "Approval":"25702",
+            "ApprovarName":"Approver Name 1",
+            "Status":"Approved"
+        },
+        {   
+            "id":3,
+            "Duration":"CHMC901",
+            "Frequency":"imaging radiology",
+            "Schedule":"Schedule 1",
+            "Approval":"25702",
+            "ApprovarName":"Approver Name 1",
+            "Status":"Approved"
+        },
+        {   
+            "id":4,
+            "Duration":"CHMC901",
+            "Frequency":"imaging radiology",
+            "Schedule":"Schedule 1",
+            "Approval":"25702",
+            "ApprovarName":"Approver Name 1",
+            "Status":"Approved"
+        }    
+    ],
+
+    "workOrders":[
+        {   
+            "id":1,
+            "Number":"1234",
+            "Opened":"Vendor 1",
+            "AssetName":"AGFADR3",
+            "Site":"CHMC",
+            "Location":"Location 1",
+            "TypeOrder":"Overdraft",
+            "AssignedGroup":"Group 1",
+            "AssignedName":"Assigned Name 1",
+            "AssignedTo":"Type1",
+            "Status":"Active",
+            "PrimaryContact":"Contact 1",
+            "Schedule":"1231",
+            "StartDate":"2020/08/20",
+            "EndDate":"2020/08/20",
+            "MaintenanceType":"Type1",
+            "Frequency":"Biomed",
+            "Summary":"Summary 1"
+        },
+        {   
+            "id":2,
+            "Number":"1234",
+            "Opened":"Vendor 2",
+            "AssetName":"AGFADR3",
+            "Site":"CHMC",
+            "Location":"Location 2",
+            "TypeOrder":"Overdraft",
+            "AssignedGroup":"Group 2",
+            "AssignedName":"Assigned Name 2",
+            "AssignedTo":"Type2",
+            "Status":"Inactive",
+            "PrimaryContact":"Contact 2",
+            "Schedule":"1927",
+            "StartDate":"2020/08/20",
+            "EndDate":"2020/08/20",
+            "MaintenanceType":"Type2",
+            "Frequency":"Allain",
+            "Summary":"Summary 2"
+        },
+        {   
+            "id":3,
+            "Number":"1234",
+            "Opened":"Vendor 3",
+            "AssetName":"AGFADR3",
+            "Site":"CHMC",
+            "Location":"Location 3",
+            "TypeOrder":"Overdraft",
+            "AssignedGroup":"Group 3",
+            "AssignedName":"Assigned Name 3",
+            "AssignedTo":"Type3",
+            "Status":"Active",
+            "PrimaryContact":"Contact 3",
+            "Schedule":"1927",
+            "StartDate":"2020/08/20",
+            "EndDate":"2020/08/20",
+            "MaintenanceType":"Type3",
+            "Frequency":"Biomed",
+            "Summary":"Summary 3"
+        },
+        {   
+            "id":4,
+            "Number":"1234",
+            "Opened":"Vendor 4",
+            "AssetName":"AGFADR4",
+            "Site":"CHMC",
+            "Location":"Location 4",
+            "TypeOrder":"Overdraft",
+            "AssignedGroup":"Group 4",
+            "AssignedName":"Assigned Name 4",
+            "AssignedTo":"Type4",
+            "Status":"Inactive",
+            "PrimaryContact":"Contact 4",
+            "Schedule":"1927",
+            "StartDate":"2020/08/20",
+            "EndDate":"2020/08/20",
+            "MaintenanceType":"Type4",
+            "Frequency":"Biomed",
+            "Summary":"Summary 4"
+        }
+    ]
+}

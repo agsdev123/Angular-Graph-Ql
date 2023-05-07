@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+  <g id="icon-total-connections" transform="translate(-124 -459)">
+    <circle id="Ellipse_269" data-name="Ellipse 269" cx="14.5" cy="14.5" r="14.5" transform="translate(124 459)" fill="#f0c300"/>
+    <g id="Group_2366" data-name="Group 2366">
+      <g id="Ellipse_271" data-name="Ellipse 271" transform="translate(135 470)" fill="rgba(255,255,255,0)" stroke="#2e3036" stroke-width="1">
+        <circle cx="3" cy="3" r="3" stroke="none"/>
+        <circle cx="3" cy="3" r="2.5" fill="none"/>
+      </g>
+      <g id="Ellipse_272" data-name="Ellipse 272" transform="translate(136 463)" fill="rgba(255,255,255,0)" stroke="#2e3036" stroke-width="1">
+        <circle cx="2" cy="2" r="2" stroke="none"/>
+        <circle cx="2" cy="2" r="1.5" fill="none"/>
+      </g>
+      <g id="Ellipse_275" data-name="Ellipse 275" transform="translate(141 479)" fill="rgba(255,255,255,0)" stroke="#2e3036" stroke-width="1">
+        <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+        <circle cx="2.5" cy="2.5" r="2" fill="none"/>
+      </g>
+      <g id="Ellipse_276" data-name="Ellipse 276" transform="translate(144 468)" fill="rgba(255,255,255,0)" stroke="#2e3036" stroke-width="1">
+        <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+        <circle cx="2.5" cy="2.5" r="2" fill="none"/>
+      </g>
+      <line id="Line_1270" data-name="Line 1270" x2="3" y2="4" transform="translate(139.5 475.5)" fill="none" stroke="#2e3036" stroke-width="1"/>
+      <line id="Line_1271" data-name="Line 1271" x1="4" y2="5" transform="translate(132.5 474.5)" fill="none" stroke="#2e3036" stroke-width="1"/>
+      <g id="Ellipse_274" data-name="Ellipse 274" transform="translate(130 478)" fill="#f0c300" stroke="#2e3036" stroke-width="1">
+        <circle cx="2" cy="2" r="2" stroke="none"/>
+        <circle cx="2" cy="2" r="1.5" fill="none"/>
+      </g>
+      <line id="Line_1272" data-name="Line 1272" x2="5" y2="2" transform="translate(130.5 470.5)" fill="none" stroke="#2e3036" stroke-width="1"/>
+      <g id="Ellipse_273" data-name="Ellipse 273" transform="translate(128 468)" fill="#f0c300" stroke="#2e3036" stroke-width="1">
+        <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+        <circle cx="2.5" cy="2.5" r="2" fill="none"/>
+      </g>
+      <line id="Line_1273" data-name="Line 1273" y1="4" transform="translate(138 466.5)" fill="none" stroke="#2e3036" stroke-width="1"/>
+      <line id="Line_1274" data-name="Line 1274" y1="1" x2="4" transform="translate(140.5 471.5)" fill="none" stroke="#2e3036" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

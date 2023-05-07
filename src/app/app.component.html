@@ -1,0 +1,35 @@
+<h1>Data List</h1>
+<ul>
+  <li *ngFor="let data of data" (click)="onSelect(data)">
+    {{ data?.name }}-{{ data?.email }}
+  </li>
+</ul>
+
+<h2>Selected Data</h2>
+<div *ngIf="selectedData">
+  <h3>{{ selectedData.name }}</h3>
+  <p>{{ selectedData.description }}</p>
+</div>
+
+<h2>Create Data</h2>
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" #name />
+  <label for="description">Description:</label>
+  <textarea id="email" #email></textarea>
+  <button (click)="createData(name.value, email.value,name.value)">Create</button>
+</form>
+
+<h2>Update Data</h2>
+<form *ngIf="selectedData">
+  <label for="name">Name:</label>
+  <input type="text" id="name" [(ngModel)]="selectedData.name" />
+  <label for="description">Description:</label>
+  <textarea id="description" [(ngModel)]="selectedData.description"></textarea>
+  <button (click)="updateData(selectedData.id, selectedData.name, selectedData.description)">
+    Update
+  </button>
+</form>
+
+<h2>Delete Data</h2>
+<button *ngIf="selectedData" (click)="deleteData(selectedData.id)">Delete</button>

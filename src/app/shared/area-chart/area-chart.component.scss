@@ -1,0 +1,22 @@
+.area-chart {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .area-chart-status {
+    margin-left: 20px;
+  
+    .status-online,
+    .status-offline {
+      font-size: 12px;
+    }
+  
+    .status-online {
+      color: var(--online);
+    }
+  
+    .status-offline {
+      color: var(--offline);
+    }
+  }
+  

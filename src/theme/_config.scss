@@ -1,0 +1,38 @@
+
+// input config Style
+input:focus {
+    box-shadow: 0 0 1px #f6bb7e !important;
+    border: 1px solid #f6bb7e !important;
+}
+
+.p-inputtext:enabled:focus{
+    box-shadow: 0 0 1px #f6bb7e !important;
+    border: 1px solid #f6bb7e !important;
+    border-color: #f6bb7e;
+}
+
+
+// dropDown config styles
+.p-dropdown:not(.p-enabled):hover{
+    border-color: #f6bb7e !important;
+}
+.p-dropdown:not(.p-enabled):focus{
+    border-color: #f6bb7e !important ;
+}
+.p-dropdown:not(.p-disabled):focus{
+    border-color: #f6bb7e !important;
+}
+
+
+// Tabs
+.p-tabview-nav li {
+    .p-tabview-nav-link:not(.p-disabled):focus {
+        box-shadow: none;
+    }
+    .p-tabview-nav-link:not(.p-disabled):hover {
+        box-shadow: none;
+    }
+}
+
+
+

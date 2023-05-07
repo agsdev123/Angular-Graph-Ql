@@ -1,0 +1,233 @@
+// Styles for Table
+@mixin TableStyles($TH_BG, $TD_BG) {
+    .p-datatable {
+        .p-datatable-thead > tr > th {
+            background-color: $TH_BG;
+            color: #fff;
+            font-size: 1.4rem;
+            border-bottom: none;
+        }
+        .p-datatable-tbody > tr > td {
+            color: #fff;
+            font-size: 1.4rem;
+            background-color: $TD_BG;
+            padding: 0 auto;
+        }
+    }
+}
+
+@mixin TabStyles {
+    .p-tabview {
+        margin-top: 1%;
+        .p-tabview-panels {
+            background-color: unset;
+            padding: 0;
+        }
+        .p-tabview-nav {
+            border: none;
+            li {
+                .p-tabview-nav-link {
+                    border: none;
+                    background-color: unset;
+                    box-shadow: none;
+                    color: #fff;
+                    font-size: 1.4rem;
+                }
+                .p-highlight .p-tabview-nav-link {
+                    font-size: 1.4rem;
+                    .p-tabview-title {
+                        border-bottom: 2px solid #fff;
+                    }
+                }
+            }
+        }
+        .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
+            box-shadow: none;
+            background-color: none;
+            background: unset;
+        }
+    }
+}
+
+// Styles for modal or Dilogue box
+@mixin ModalStayles($ModalWidth) {
+    .p-dialog {
+        width: $ModalWidth;
+        text-align: center;
+        border-radius: 15px;
+        border: none;
+        .p-dialog-content {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    }
+    .p-dialog-header {
+        display: unset;
+        position: relative;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        .p-dialog-header-icons {
+            position: absolute;
+            top: 20%;
+            right: 2%;
+            .pi {
+                font-size: 2rem;
+            }
+        }
+        .p-dialog-title {
+            font-size: 1.5rem;
+            color: #f6bb7e;
+        }
+    }
+}
+
+// Styles for button with icon
+@mixin ButtonStyle($width, $height) {
+    .p-button {
+        width: $width;
+        border: none;
+        font-weight: 600;
+        font-size: 1.26rem;
+        border-radius: 10px;
+        background: transparent linear-gradient(153deg, #f8d477 0%, #f39f86 100%) 0% 0% no-repeat padding-box;
+        height: $height;
+        color: #000;
+        .pi {
+            font-size: 8px;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: #000;
+            border-radius: 50%;
+            color: #f5b480;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 1.5rem;
+            margin-right: 2%;
+          }
+    }
+}
+
+// Styles for button with Borders
+@mixin BorderButton($height, $width) {
+    // .save_btn .p-button{
+    //     width: $width;
+    //     height: $height;
+    //     border: 1.5px solid #f4af81;
+    //     background: unset;
+    //     font-size: 1.26rem;
+    //     font-weight: 600;
+    //     color: #f4af81;
+    //     border-radius: 10px;
+    // }
+    .p-button{
+        width: $width;
+        height: $height;
+        border: 1.5px solid #f4af81;
+        background: unset;
+        font-size: 1.26rem;
+        font-weight: 600;
+        color: #f4af81;
+        border-radius: 10px;
+    }
+}
+
+// Styles for button with Background
+@mixin BgButton($height, $width) {
+    .p-button {
+        width: $width;
+        border: none;
+        font-weight: 600;
+        font-size: 1.26rem;
+        border-radius: 10px;
+        background: transparent linear-gradient(153deg, #f8d477 0%, #f39f86 100%) 0% 0% no-repeat padding-box;
+        height: $height;
+        color: #000;
+    }
+}
+
+@mixin NormalInputStyles($height, $Bg, $color) {
+    input{
+        border: none;
+        background:$Bg;
+        color:$color;
+        width: 100%;
+        height: $height;
+        font-size: 1.35rem;
+        border-radius: 5px;
+        outline: none;
+        &::placeholder {
+            color: $color;
+            font-size: 1.3rem;
+            font-weight: 600;
+            opacity: 0.5;
+            font: normal normal medium 1.3rem/4rem Poppins;
+        }
+        &:focus, &:hover,&:active{
+            box-shadow: none;
+        }
+    }
+}
+
+@mixin PaginationStyles {
+    .p-paginator {
+        background: unset;
+        padding-top: 1.2%;
+        padding-bottom: 1.1%;
+        border: none;
+        .p-paginator-first,
+        .p-paginator-last {
+            display: none;
+        }
+        .p-paginator-page.p-highlight {
+            border-radius: 50%;
+            background-color: #f4ad81;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            font-weight: 800;
+            color: #fff;
+        }
+        .p-paginator-prev,
+        .p-paginator-next {
+            border-radius: 50%;
+            // background: transparent linear-gradient(149deg, var(--thirdOrange) 0%, var(--fourthOragne) 100%);
+            background-color: #f4ad81;
+            border-color: #f4ad81;
+            .pi {
+                color: #fff;
+                font-weight: 600;
+                font-size: 1.3rem;
+            }
+            &:hover {
+                background-color: #f4ad81;
+                border-color: #f4ad81;
+            }
+        }
+        .p-link:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+// @mixin Accordian_Style {
+//     .p-accordion {
+//         .p-accordion-header .p-accordion-header-link {
+//             background-color: unset;
+//             border: none;
+//             box-shadow: none;
+//             font-size: 1.6rem;
+//             font-weight: 600;
+//             color: #f5b281;
+//             &:hover {
+//                 background-color: unset;
+//                 color: #f5b281;
+//             }
+//         }
+//         .p-accordion-content {
+//             border: none;
+//             background-color: unset;
+//         }
+//     }
+// }

@@ -1,0 +1,8 @@
+<app-card [hasCardTitle]="true" cardTitle= "Risk Meter" class="risk-meter"
+  [resetBtn]="false" [changeDetect]="false" [moreOptions]="false" [filterOptions]="false">
+  <div class="doughnut-chart-category-wrapper" style="height: 445px">
+    <!-- <c-risk-meter [chartData]="chartData"> </c-risk-meter> -->
+    <div echarts (chartInit)="onChartInit($event)" [options]="options" class="doughnut-chart">
+    </div>
+  </div>
+</app-card>

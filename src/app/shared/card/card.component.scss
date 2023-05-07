@@ -1,0 +1,36 @@
+
+.card__body {
+  height: 26rem;
+  padding-top: 0;
+  text-align: center;
+  background: #0c0b0f 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  position: relative;
+  .polar_charts {
+    height: 24rem ;
+    padding-top: 3rem;
+  } 
+  .card__title {
+    margin-top: 1rem;
+    position: relative;
+    span {
+      text-align: left;
+      font: normal normal medium 24rem/49px Poppins !important;
+      letter-spacing: 0px;
+      color: #f6bb7e;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: left;
+      position: absolute;
+      left: 3%;
+      margin-top: 2rem;
+    }
+  }
+  .doughnut-chart-category-wrapper{
+    height: 34rem !important;
+    canvas{
+      top: 5rem !important;
+    }
+  }
+}
+
